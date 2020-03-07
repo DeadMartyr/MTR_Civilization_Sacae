@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# ModBuddy Solution File, Format Version 12.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "MTR_Civilization_Sacae", "MTR_Civilization_Sacae\MTR_Civilization_Sacae.civ6proj", "{D654C693-E1A6-4A9A-89D0-7E93EA57D76C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Civ6 = Default|Civ6
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D654C693-E1A6-4A9A-89D0-7E93EA57D76C}.Default|Civ6.ActiveCfg = Default|Civ6
+		{D654C693-E1A6-4A9A-89D0-7E93EA57D76C}.Default|Civ6.Build.0 = Default|Civ6
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

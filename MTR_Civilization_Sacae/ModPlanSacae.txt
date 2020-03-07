@@ -1,0 +1,45 @@
+==========================================================================================
+MOD PLAN - Lyndis from Fire Emblem (Art from FE Heroes - Legendary Lyn)
+==========================================================================================
+Had similar idea with horse archer to a lyn mod made for Civ 5, decided to adopt some of the other ideas
+
+Civilization (Sacae)
+	
+	UI: Nomad Camp
+		+1 Food +1 Culture +1 Production
+		>+ [] with CIVIC
+		>+ [] with CIVIC
+		Effect:
+			>Pastures around it get +1 Food
+			>+10% border growth for each one worked in a city
+		Restrictions:
+			>Cannot be touching another Nomad Camp
+			>Only can be built on Plains (Flat)
+
+	UU: Nomadic Archer
+		Basically Saka Horse Archer but a bit more expensive and stronger to make up 
+		for the fact that unlike Scythia, you don't get two when you make em
+		
+		Tech:				Horseback Riding
+		Production Cost:	120 (from 100)
+		Gold Cost:			400
+		Melee:				20 (from 15)
+		Ranged:				30 (from 25)
+		Atk Range:			1
+		Movement:			4
+		Maintenance:		2
+
+		Bonus to damage dealt to units standing on flat terrain
+
+	UA: Call of the Wind
+		Cavalry units (Light and Heavy) Heal from moving
+		NOTE: HOW THIS'LL WORK IDK, flat per tile?  
+
+Leader (Lyn)
+
+	UA: Lady of the Wind
+		1) +1 Food and +1 Culture in a city for every 3-4 plain tiles (flat, maybe hills) 
+		   OWNED in a city, not worked
+		2) Every tile gained through expansion (natural or purchased) grants 10 flat 
+		   production to whatever that city is working on, Buffed to 20 for Plains (maybe hills too)
+		

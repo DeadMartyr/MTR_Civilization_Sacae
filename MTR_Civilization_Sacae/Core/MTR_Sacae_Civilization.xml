@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Sacae_Civilization -->
+<!-- Author: Martyr -->
+<!-- DateCreated: 2020-02-23 11:36:56 -->
+<GameData>
+	
+	<!--Defines Sacae as a "Type" of Civilization-->
+	<Types>
+		<Row>
+			<Type>CIVILIZATION_MTR_SACAE</Type>
+			<Kind>KIND_CIVILIZATION</Kind>
+		</Row>
+	</Types>
+	
+	<!--The Core that defines basic attributes as a Civ-->
+	<Civilizations>
+		<Row>
+			<CivilizationType>CIVILIZATION_MTR_SACAE</CivilizationType>
+			<Name>LOC_CIVILIZATION_MTR_SACAE_NAME</Name>
+			<Description>LOC_CIVILIZATION_MTR_SACAE_DESCRIPTION</Description>
+			<Adjective>LOC_CIVILIZATION_MTR_SACAE_ADJECTIVE</Adjective>
+			<StartingCivilizationLevelType>CIVILIZATION_LEVEL_FULL_CIV</StartingCivilizationLevelType>
+			<RandomCityNameDepth>10</RandomCityNameDepth>
+			<Ethnicity>ETHNICITY_EURO</Ethnicity>1
+		</Row>
+	</Civilizations>
+	
+	<!-- ============================================================ -->
+	<!-- =						Named Deserts						= -->
+	<!-- ============================================================ -->
+	<!-- Commented out, will finalize after Mod is functional
+	<NamedDeserts>
+		<Row NamedDesertType="NAMED_DESERT_1" Name="LOC_NAMED_DESERT_1"/>
+	</NamedDeserts>
+	<NamedDesertCivilizations>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" NamedDesertType="NAMED_DESERT_1"/>
+	</NamedDesertCivilizations>
+	-->
+
+	<!-- ============================================================ -->
+	<!-- =						Named Mountains						= -->
+	<!-- ============================================================ -->
+	<!-- Commented out, will finalize after Mod is functional
+	<NamedMountains>
+		<Row NamedMountainType="NAMED_MOUNTAIN_1" Name="LOC_NAMED_MOUNTAIN_1"/>
+	</NamedMountains>
+	<NamedMountainCivilizations>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" NamedMountainType="NAMED_MOUNTAIN_1"/>
+	</NamedMountainCivilizations>
+	-->
+
+	<!-- ============================================================ -->
+	<!-- =						Named Rivers						= -->
+	<!-- ============================================================ -->
+	<!-- Commented out, will finalize after Mod is functional
+	<NamedRivers>
+		<Row NamedRiverType="NAMED_RIVER_1" Name="LOC_NAMED_RIVER_1"/>
+	</NamedMountains>
+	<NamedRiverCivilizations>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" NamedRiverType="NAMED_RIVER_1"/>
+	</NamedRiverCivilizations>
+	-->
+
+	<!-- ============================================================ -->
+	<!-- =						Named Oceans						= -->
+	<!-- ============================================================ -->
+	<!-- Commented out, will finalize after Mod is functional
+	<NamedOceans>
+		<Row NamedOceanType="NAMED_OCEAN_1" Name="LOC_NAMED_OCEAN_1"/>
+	</NamedOceans>
+	<NamedOceanCivilizations>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" NamedOceanType="NAMED_OCEAN_1"/>
+	</NamedOceanCivilizations>
+	-->
+
+	<!-- ============================================================ -->
+	<!-- =						Named Lakes						= -->
+	<!-- ============================================================ -->
+	<!-- Commented out, will finalize after Mod is functional
+	<NamedLakes>
+		<Row NamedLakeType="NAMED_LAKE_1" Name="LOC_NAMED_LAKE_1"/>
+	</NamedLakes>
+	<NamedLakeCivilizations>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" NamedLakeType="NAMED_LAKE_1"/>
+	</NamedLakeCivilizations>
+	-->
+
+	<!-- ============================================================ -->
+	<!-- =						City Names							= -->
+	<!-- ============================================================ -->
+	<CityNames>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CityName="LOC_CITY_NAME_MTR_SACAE_1"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CityName="LOC_CITY_NAME_MTR_SACAE_2"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CityName="LOC_CITY_NAME_MTR_SACAE_3"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CityName="LOC_CITY_NAME_MTR_SACAE_4"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CityName="LOC_CITY_NAME_MTR_SACAE_5"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CityName="LOC_CITY_NAME_MTR_SACAE_6"/>
+	</CityNames>
+
+	<!-- ============================================================ -->
+	<!-- =						Citizen Names						= -->
+	<!-- ============================================================ -->
+	<CivilizationCitizenNames>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_MALE_1" Female="0"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_MALE_2" Female="0"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_MALE_3" Female="0"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_MALE_4" Female="0"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_MALE_5" Female="0"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_FEMALE_1" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_FEMALE_2" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_FEMALE_3" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_FEMALE_4" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" CitizenName="LOC_CITIZEN_MTR_SACAE_FEMALE_5" Female="1"/>
+	</CivilizationCitizenNames>
+
+	<!-- ============================================================ -->
+	<!-- =					Civilization Info						= -->
+	<!-- ============================================================ -->
+	<CivilizationInfo>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	Header="LOC_CIVINFO_LOCATION"	Caption="LOC_CIVINFO_MTR_SACAE_LOCATION"	SortIndex="10"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	Header="LOC_CIVINFO_SIZE"		Caption="LOC_CIVINFO_MTR_SACAE_SIZE"		SortIndex="10"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	Header="LOC_CIVINFO_POPULATION"	Caption="LOC_CIVINFO_MTR_SACAE_POPULATION"	SortIndex="10"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	Header="LOC_CIVINFO_CAPITAL"	Caption="LOC_CIVINFO_MTR_SACAE_CAPITAL"		SortIndex="10"/>
+	</CivilizationInfo>
+
+	<!-- ============================================================ -->
+	<!-- =						Start Bias							= -->
+	<!-- ============================================================ -->
+	<StartBiasFeatures>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	FeatureType="FEATURE_FLOODPLAINS"	Tier="1"/>
+	</StartBiasFeatures>
+	<StartBiasTerrains>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	TerrainType="TERRAIN_PLAINS"		Tier="3"/>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE"	TerrainType="TERRAIN_PLAINS_HILLS"	Tier="3"/>
+	</StartBiasTerrains>
+</GameData>

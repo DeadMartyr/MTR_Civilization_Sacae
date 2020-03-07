@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Sacae_UI -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-02-23 13:45:38 -->
+<GameData>
+
+	<Types>
+		<Row Type="TRAIT_CIVILIZATION_IMPROVEMENT_MTR_SACAE_UI"	Kind="KIND_TRAIT"/>
+		<Row Type="IMPROVEMENT_MTR_SACAE_UI"					Kind="KIND_IMPROVEMENT"/>
+	</Types>
+
+	<Traits>
+		<Row TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_MTR_SACAE_UI"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"/>
+	</Traits>
+
+	<CivilizationTraits>
+		<Row TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_MTR_SACAE_UI"	CivilizationType="CIVILIZATION_MTR_SACAE"/>
+	</CivilizationTraits>
+
+	<Improvements>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MTR_SACAE_UI</ImprovementType>
+			<Name>LOC_IMPROVEMENT_MTR_SACAE_UI_NAME</Name>
+			<Description>LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION</Description>
+			<TraitType>TRAIT_CIVILIZATION_IMPROVEMENT_MTR_SACAE_UI</TraitType>
+			<Icon>ICON_IMPROVEMENT_MTR_SACAE_UI</Icon>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<Buildable>1</Buildable>
+			<PlunderType>PLUNDER_HEAL</PlunderType>
+			<PlunderAmount>25</PlunderAmount>
+			<Housing>1</Housing>
+			<SameAdjacentValid>false</SameAdjacentValid>
+			<Domain>DOMAIN_LAND</Domain>
+		</Row>
+	</Improvements>
+
+	<Improvement_ValidBuildUnits>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	UnitType="UNIT_BUILDER"/>
+	</Improvement_ValidBuildUnits>
+
+	<Improvement_ValidTerrains>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	TerrainType="TERRAIN_PLAINS"/>
+	</Improvement_ValidTerrains>
+
+	<Improvement_YieldChanges>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldType="YIELD_FOOD"			YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldType="YIELD_PRODUCTION"	YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldType="YIELD_CULTURE"		YieldChange="1"/>
+	</Improvement_YieldChanges>
+
+	<Improvement_BonusYieldChanges>
+		<Row Id="550"	ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldType="YIELD_CULTURE"	BonusYieldChange="2"	PrereqCivic="CIVIC_MEDIEVAL_FAIRES"/>
+	</Improvement_BonusYieldChanges>
+
+	<!--
+	<Improvement_Adjacencies>
+		
+	</Improvement_Adjacencies>
+	-->
+
+	<!--
+	<Adjacency_YieldChanges>
+		
+	</Adjacency_YieldChanges>
+	-->
+</GameData>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Sacae_Text -->
+<!-- Author: Martyr -->
+<!-- DateCreated: 2020-02-23 12:13:03 -->
+<GameData>
+	<LocalizedText>
+		<!-- ============================================================ -->
+		<!-- =			Civilization	- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+
+		<Row Language="en_US"	Tag="LOC_CIVILIZATION_MTR_SACAE_NAME"			Text="Sacae"/>
+		<Row Language="en_US"	Tag="LOC_CIVILIZATION_MTR_SACAE_DESCRIPTION"	Text="Sacean Nomads"/>
+		<Row Language="en_US"	Tag="LOC_CIVILIZATION_MTR_SACAE_ADJECTIVE"		Text="Sacean"/>
+
+		<!-- ============================================================ -->
+		<!-- =			Deserts			- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+
+		<!-- ============================================================ -->
+		<!-- =			Mountains		- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+
+		<!-- ============================================================ -->
+		<!-- =			Lakes			- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+
+		<!-- ============================================================ -->
+		<!-- =			Cities			- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_1"			Text="Lyn's Tribe"/>
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_2"			Text="Tribe 2"/>
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_3"			Text="Tribe 3"/>
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_4"			Text="Tribe 4"/>
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_5"			Text="Tribe 5"/>
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_6"			Text="Tribe 6"/>
+		<!-- ============================================================ -->
+		<!-- =			Citizens		- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+		<!--Males-->
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_MALE_1"			Text="Cain"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_MALE_2"			Text="Abel"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_MALE_3"			Text="Male 3"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_MALE_4"			Text="Male 4"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_MALE_5"			Text="Male 5"/>
+		<!--Females-->
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_FEMALE_1"		Text="Florina"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_FEMALE_2"		Text="Female 2"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_FEMALE_3"		Text="Female 3"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_FEMALE_4"		Text="Female 4"/>
+		<Row Language="en_US"	Tag="LOC_CITIZEN_MTR_SACAE_FEMALE_5"		Text="Female 5"/>
+
+		<!-- ============================================================ -->
+		<!-- =			CivInfo			- MTR_Sacae_Civilization.xml	= -->
+		<!-- ============================================================ -->
+		<Row Language="en_US"	Tag="LOC_CIVINFO_MTR_SACAE_LOCATION"			Text="Elibe"/>
+		<Row Language="en_US"	Tag="LOC_CIVINFO_MTR_SACAE_SIZE"				Text="Vast, but sparsely populated."/>
+		<Row Language="en_US"	Tag="LOC_CIVINFO_MTR_SACAE_POPULATION"			Text="Unknown"/>
+		<Row Language="en_US"	Tag="LOC_CIVINFO_MTR_SACAE_CAPITAL"				Text="N/A"/>
+
+		<!-- ============================================================ -->
+		<!-- =			CivPedia		-								= -->
+		<!-- ============================================================ -->
+
+
+		<!-- ============================================================ -->
+		<!-- =			NomadCampUI		- MTR_Sacae_UI.xml				= -->
+		<!-- ============================================================ -->
+		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"			Text="Nomad Camp"/>
+		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	Text="Unique Improvement unique to the Sacaean Nomads. Grants +1 [ICON_FOOD] Food, +1 [ICON_CULTURE] Culture, +1 [ICON_PRODUCTION] Production. Must be built on plains without hills."/>
+
+	</LocalizedText>
+</GameData>

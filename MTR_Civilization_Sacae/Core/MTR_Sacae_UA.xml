@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Sacae_UA -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-02-23 13:45:00 -->
+<GameData>
+
+	<!--Defines the Type of Traits and Modifiers-->
+	<Types>
+		<Row Type="TRAIT_CIVILIZATION_MTR_SACAE_UA"		Kind="KIND_TRAIT"/>
+		<!--This is why we make a plan first
+		<Row Type="MODTYPE_MTR_SACAE_somethingidk"		Kind="KIND_MODIFIER"/>
+		-->
+	</Types>
+
+	<Traits>
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_MTR_SACAE_UA</TraitType>
+			<Name>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME</Name>
+			<Description>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION</Description>
+		</Row>	
+	</Traits>
+
+	<CivilizationTraits>
+		<Row>
+			<CivilizationType>CIVILIZATION_MTR_SACAE</CivilizationType>
+			<TraitType>TRAIT_CIVILIZATION_MTR_SACAE_UA</TraitType>
+		</Row>
+	</CivilizationTraits>
+
+	<!--
+	<TraitModifiers>
+		<Row TraitType="TRAIT_CIVILIZATION_MTR_SACAE_UA"	ModifierId="MODTYPE_MTR_SACAE_somethingidk"/>
+	</TraitModifiers>
+
+	<DynamicModifiers>
+		<Row ModifierType="MODTYPE_MTR_SACAE_somethingidk"	CollectionType="COLLECTION_PLAYER_CITIES"	EffectType="EFFECT_RIVER_ADJACENCY"/>
+	</DynamicModifiers>
+
+	<Modifiers>
+		<Row ModifierId="MODIFIER_MTR_SACAE_somethingidk"	ModifierType="MODTYPE_MTR_SACAE_somethingidk"	SubjectRequirementSetId="NULL"/>
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row ModifierId="MODIFIER_MTR_SACAE_somethingidk"	Name="YieldType"	Value="YIELD_SCIENCE"/>
+		<Row ModifierId="MODIFIER_MTR_SACAE_somethingidk"	Name="Amount"		Value="20"/>
+	</ModifierArguments>
+	-->
+	<!--
+	<RequirementSetRequirements>
+		
+	</RequirementSetRequirements>
+	
+	<RequirementSets>
+		
+	</RequirementSets>
+
+	<Requirements>
+		
+	</Requirements>
+
+	<RequirementArguments>
+		
+	</RequirementArguments>
+	-->
+</GameData>

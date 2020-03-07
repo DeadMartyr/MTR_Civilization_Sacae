@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Sacae Civilization - [COLOR_FLOAT_GOLD]Fire Emblem[ENDCOLOR]</Name>
+    <Guid>3d304339-2777-4b7f-b4c5-c1075ffb9a0b</Guid>
+    <ProjectGuid>d654c693-e1a6-4a9a-89d0-7e93ea57d76c</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Temporary description, I am moving over files from old directory to see if it'll fix error</Teaser>
+    <Description>Temporary description, I am moving over files from old directory to see if it'll fix error</Description>
+    <Authors>Martyr</Authors>
+    <SpecialThanks>Deliverator, Keni, LeeS, JNR</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <AssemblyName>MTR_Civilization_Sacae</AssemblyName>
+    <RootNamespace>MTR_Civilization_Sacae</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Database_MTR_Sacae"><File>Core/MTR_Sacae_Civilization.xml</File><File>Core/MTR_Sacae_Colors.xml</File><File>Core/MTR_Sacae_UA.xml</File><File>Core/MTR_Sacae_UI.xml</File><File>Core/MTR_Sacae_UU.xml</File><File>Leader/MTR_Lyndis_Config.xml</File><File>Leader/MTR_Lyndis_Leader.xml</File></UpdateDatabase><UpdateText id="Text_MTR_Sacae"><File>Text/MTR_Sacae_Text.xml</File></UpdateText><ImportFiles id="Import_MTR_Sacae"><File>Textures/Icon_MTR_Sacae_45.dds</File><File>Textures/Icon_MTR_Sacae_45.tex</File></ImportFiles><UpdateIcons id="Icons_MTR_Sacae"><File>Core/MTR_Sacae_Icons.xml</File></UpdateIcons><UpdateArt id="Art_MTR_Sacae"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Database_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Civilization.xml</File><File>Core/MTR_Sacae_Colors.xml</File><File>Core/MTR_Sacae_UA.xml</File><File>Core/MTR_Sacae_UI.xml</File><File>Core/MTR_Sacae_UU.xml</File><File>Leader/MTR_Lyndis_Config.xml</File><File>Leader/MTR_Lyndis_Leader.xml</File></UpdateDatabase><UpdateText id="Text_MTR_Sacae_Ingame"><File>Text/MTR_Sacae_Text.xml</File></UpdateText><ImportFiles id="Import_MTR_Sacae_Ingame"><File>Textures/Icon_MTR_Sacae_45.dds</File><File>Textures/Icon_MTR_Sacae_45.tex</File></ImportFiles><UpdateIcons id="Icons_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Icons.xml</File></UpdateIcons><UpdateArt id="Art_MTR_Sacae_Ingame"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="MTR_Civilization_Sacae.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\MTR_Sacae_Civilization.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\MTR_Sacae_Colors.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\MTR_Sacae_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\MTR_Sacae_UA.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\MTR_Sacae_UI.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\MTR_Sacae_UU.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModPlanSacae.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Questions.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MTR_Sacae_45.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MTR_Sacae_45.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\MTR_Sacae_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\MTR_Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core" />
+    <Folder Include="Leader" />
+    <Folder Include="Text" />
+    <Folder Include="Textures\" />
+    <Folder Include="XLPs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
