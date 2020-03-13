@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Text -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-03-13 13:38:33 -->
+<GameData>
+	<LocalizedText>
+		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"			Text="Lyndis"/>
+	</LocalizedText>
+</GameData>
