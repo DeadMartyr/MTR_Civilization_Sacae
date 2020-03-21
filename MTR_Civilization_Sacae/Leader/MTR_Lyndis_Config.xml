@@ -16,7 +16,7 @@
 			<!--Leader-->
 			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
 			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
-			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderIcon>
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_SACAE_UA_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_SACAE_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderAbilityIcon>
@@ -34,7 +34,7 @@
 			<!--Leader-->
 			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
 			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
-			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderIcon>
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_SACAE_UA_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_SACAE_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderAbilityIcon>
@@ -52,16 +52,18 @@
 			<!--Leader-->
 			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
 			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
-			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderIcon>
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_SACAE_UA_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_SACAE_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderAbilityIcon>
 		</Row>
 	</Players>
 
-	<!--
+	
 	<PlayerItems>
-		<Row	Domain=""	CivilizationType=""	LeaderType=""	Type=""	Icon=""	Name=""	Description=""	SortIndex=""/>
+		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
 	</PlayerItems>
-	-->
+
 </GameData>

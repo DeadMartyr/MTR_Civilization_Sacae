@@ -476,6 +476,8 @@
 			<libraryName text="UITexture"/>
 			<relativePackagePaths>
 				<Element text="MTR_Icons"/>
+				<Element text="UI/Icons"/>
+				<Element text="UILeaders"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

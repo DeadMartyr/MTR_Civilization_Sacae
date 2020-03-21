@@ -5,24 +5,24 @@
 <GameData>
 	<IconTextureAtlases>
 		
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="22"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_22"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="30"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_30"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="36"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_36"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="44"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_44"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="22"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_22.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="30"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_30.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="36"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_36.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="44"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_44.dds"/>
 		
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="45"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_45"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="45"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_45.dds"/>
 		
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="48"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_48"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="50"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_50"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="64"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_64"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="80"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_80"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="128"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_128"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="200"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_200"/>
-		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="256"	IconsPerRow="1" IconsPerColumn="1" Filename="Icon_MTR_Sacae_256"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="48"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_48.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="50"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_50.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="64"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_64.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="80"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_80.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="128"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_128.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="200"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_200.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="256"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_256.dds"/>
 		
 	</IconTextureAtlases>
 	<IconDefinitions>
-		<Row Name="ICON_LEADER_MTR_LYNDIS"		Atlas="ICON_ATLAS_MTR_SACAE" Index="0"/>
+		<!--<Row Name="ICON_LEADER_MTR_LYNDIS"		Atlas="ICON_ATLAS_MTR_SACAE" Index="0"/>-->
 		<Row Name="ICON_CIVILIZATION_MTR_SACAE"		Atlas="ICON_ATLAS_MTR_SACAE" Index="0"/>
 	</IconDefinitions>
 </GameData>

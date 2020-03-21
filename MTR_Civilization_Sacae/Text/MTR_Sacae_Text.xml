@@ -61,7 +61,12 @@
 		<!-- =			CivPedia		-								= -->
 		<!-- ============================================================ -->
 
-
+		<!-- ============================================================ -->
+		<!-- =			CallOfTheWindUA	- MTR_Sacae_UA.xml				= -->
+		<!-- ============================================================ -->
+		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME"				Text="Call of the Wind"/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION"		Text="Calvary Units, both light and heavy, heal upon moving per tile moved"/>
+		
 		<!-- ============================================================ -->
 		<!-- =			NomadCampUI		- MTR_Sacae_UI.xml				= -->
 		<!-- ============================================================ -->

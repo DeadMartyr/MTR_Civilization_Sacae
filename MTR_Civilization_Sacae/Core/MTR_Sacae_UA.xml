@@ -6,10 +6,8 @@
 
 	<!--Defines the Type of Traits and Modifiers-->
 	<Types>
-		<Row Type="TRAIT_CIVILIZATION_MTR_SACAE_UA"		Kind="KIND_TRAIT"/>
-		<!--This is why we make a plan first
-		<Row Type="MODTYPE_MTR_SACAE_somethingidk"		Kind="KIND_MODIFIER"/>
-		-->
+		<Row Type="TRAIT_CIVILIZATION_MTR_SACAE_UA"				Kind="KIND_TRAIT"/>
+		<Row Type="MODTYPE_MTR_SACAE_UA_CAVALRY_HEALSONMOVE"	Kind="KIND_MODIFIER"/>
 	</Types>
 
 	<Traits>
@@ -29,37 +27,59 @@
 
 	<!--
 	<TraitModifiers>
-		<Row TraitType="TRAIT_CIVILIZATION_MTR_SACAE_UA"	ModifierId="MODTYPE_MTR_SACAE_somethingidk"/>
+		<Row TraitType="TRAIT_CIVILIZATION_MTR_SACAE_UA"	ModifierId="MODTYPE_MTR_SACAE_UA_CAVALRY_HEALSONMOVE"/>
 	</TraitModifiers>
-
+	
+	
 	<DynamicModifiers>
-		<Row ModifierType="MODTYPE_MTR_SACAE_somethingidk"	CollectionType="COLLECTION_PLAYER_CITIES"	EffectType="EFFECT_RIVER_ADJACENCY"/>
+		<Row ModifierType="MODTYPE_MTR_SACAE_UA_CAVALRY_HEALSONMOVE"	CollectionType="COLLECTION_OWNER"	EffectType="EFFECT_ADJUST_UNIT_MOVEMENT"/>
 	</DynamicModifiers>
-
+	
+	
 	<Modifiers>
-		<Row ModifierId="MODIFIER_MTR_SACAE_somethingidk"	ModifierType="MODTYPE_MTR_SACAE_somethingidk"	SubjectRequirementSetId="NULL"/>
+		<Row ModifierId="MODIFIER_MTR_SACAE_CAVALRY_HEALSONMOVE"	ModifierType="MODTYPE_MTR_SACAE_CAVALRY_HEALSONMOVE"	SubjectRequirementSetId="REQSET_MTR_SACAE_UA_UNIT_IS_CAVALRY"/>
 	</Modifiers>
 
 	<ModifierArguments>
-		<Row ModifierId="MODIFIER_MTR_SACAE_somethingidk"	Name="YieldType"	Value="YIELD_SCIENCE"/>
-		<Row ModifierId="MODIFIER_MTR_SACAE_somethingidk"	Name="Amount"		Value="20"/>
+		<Row ModifierId="MODIFIER_MTR_SACAE_CAVALRY_HEALSONMOVE"	Name="Amount"		Value="20"/>
 	</ModifierArguments>
-	-->
-	<!--
+
+	<RequirementSets>
+		<Row RequirementSetId="REQSET_MTR_SACAE_UA_UNIT_IS_CAVALRY"	RequirementSetType="REQUIREMENTSET_TEST_ANY"/> 
+	</RequirementSets>
+	
 	<RequirementSetRequirements>
-		
+		<Row RequirementSetId="REQSET_MTR_SACAE_UA_UNIT_IS_CAVALRY"	RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_LIGHTCAVALRY"/>
+		<Row RequirementSetId="REQSET_MTR_SACAE_UA_UNIT_IS_CAVALRY"	RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_HEAVYCAVALRY"/>
+		<Row RequirementSetId="REQSET_MTR_SACAE_UA_UNIT_IS_CAVALRY"	RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_RANGEDCAVALRY"/>
 	</RequirementSetRequirements>
 	
-	<RequirementSets>
-		
-	</RequirementSets>
-
 	<Requirements>
-		
+		<Row RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_LIGHTCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"	Inverse="0"/>
+		<Row RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_HEAVYCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"	Inverse="0"/>
+		<Row RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_RANGEDCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"	Inverse="0"/>
 	</Requirements>
 
 	<RequirementArguments>
-		
+		<Row RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_LIGHTCAVALRY"	Name="Tag"	Value="CLASS_LIGHT_CAVALRY"/>
+		<Row RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_HEAVYCAVALRY"	Name="Tag"	Value="CLASS_HEAVY_CAVALRY"/>
+		<Row RequirementId="REQ_MTR_SACAE_UA_UNIT_IS_RANGEDCAVALRY"	Name="Tag"	Value="CLASS_RANGED_CAVALRY"/>
 	</RequirementArguments>
+	-->
+	
+	<!--Effects to think about
+		EFFECT_ADJUST_UNIT_FIGHT_WHILE_EMBARKED (Nami UU, amphibious melee units)
+		EFFECT_ADJUST_UNIT_POST_COMBAT_HEAL
+		EFFECT_GRANT_HEAL_AFTER_ACTION
+		EFFECT_ADJUST_DISABLE_HEALING (Maybe make them unable to heal by remaining stationary at all)
+		EFFECT_ADJUST_UNIT_HEAL (I think this is the straight up "Heal them this amount" one)
+		
+		Events:
+		UnitMoveComplete
+		UnitMoved
+		UnitMovementPointsChanged (This probably best one - check how much it went down by, heal by that much * rate)
+		
+		Requirements:
+		REQUIREMENT_UNIT_TAG_MATCHES
 	-->
 </GameData>
