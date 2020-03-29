@@ -24,6 +24,13 @@
 			<Ethnicity>ETHNICITY_EURO</Ethnicity>1
 		</Row>
 	</Civilizations>
+
+	<!--
+	<CivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" TraitType="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU" />
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_MTR_SACAE_UI" />
+	</CivilizationTraits>
+	-->
 	
 	<!-- ============================================================ -->
 	<!-- =						Named Deserts						= -->

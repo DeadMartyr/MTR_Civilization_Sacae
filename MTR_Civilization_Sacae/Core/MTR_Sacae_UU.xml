@@ -3,5 +3,71 @@
 <!-- Author: Angelo -->
 <!-- DateCreated: 2020-02-23 13:45:55 -->
 <GameData>
+	<!--To affect units, I believe it has to be a "unit ability" rather than a civ one, I just want to see if I can get a placeholder effect to work on this single UU, then see if i can broaden 
+		it to any cavalry that a Sacean Leader owns, then see if I can make it the actual effect I want (will most likely need lua)-->
+	<!--
+		Checklist:	
+		[ ]	Placeholder UU Made
+		[ ]	Movement Abjustment Placeholder on UU
+		[ ]	Placeholder on all Sacaean Cavalry
+			[ ] Ensure it's not on other leaders' cavalry
+		[ ] Make new effect
+		[ ] Implement Effect
+	-->
+	
+	<Types>
+		<Row	Type="UNIT_MTR_NOMAD"	Kind="KIND_UNIT"/>
+		<!--
+		<Row	Type="ABILITY_MTR_CALLOFTHEWIND"	Kind="KIND_ABILITY"/>
+		-->
+		<Row	Type="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Kind="KIND_TRAIT"/>\
+	</Types>
 
+	<!--
+	<UnitAiInfos>
+		<Row	UnitType="UNIT_MTR_NOMAD"	AiType="UNITTYPE_RANGED"/>
+	</UnitAiInfos>
+	-->
+	<Units>
+		<Row>
+			<UnitType>UNIT_MTR_NOMAD</UnitType>
+			<Name>LOC_UNIT_MTR_NOMAD_NAME</Name>
+			<Description>LOC_UNIT_MTR_NOMAD_DESCRIPTION</Description>
+			<PurchaseYield>YIELD_GOLD</PurchaseYield>
+			<TraitType>TRAIT_UNIT_MTR_NOMAD</TraitType>
+			<StrategicResource>RESOURCE_HORSES</StrategicResource>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<MandatoryObsoleteTech>TECH_COMBUSTION</MandatoryObsoleteTech>
+			<Cost>120</Cost>
+			<Maintenance>2</Maintenance>
+			<BaseMoves>4</BaseMoves>
+			<BaseSightRange>2</BaseSightRange>
+			<ZoneOfControl>true</ZoneOfControl>
+			<Domain>DOMAIN_LAND</Domain>
+			<Combat>40</Combat>
+			<RangedCombat>50</RangedCombat>
+			<Range>1</Range>
+			<FormationClass>FORMATION_CLASS_LAND_COMBAT</FormationClass>
+			<PromotionClass>PROMOTION_CLASS_RANGED</PromotionClass>
+			<AdvisorType>ADVISOR_CONQUEST</AdvisorType>
+		</Row>
+	</Units>
+
+	<!--
+	<Tags>
+		<Row	Tag="CLASS_MTR_NOMAD"	Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+
+	<TypeTags>
+		<Row	Type="UNIT_MTR_NOMAD"	Tag="CLASS_RANGED_CAVALRY"/>
+		<Row	Type="UNIT_MTR_NOMAD"	Tag="CLASS_MTR_NOMAD"/>
+	</TypeTags>
+
+	<UnitUpgrades>
+		<Row>
+			<Unit>UNIT_MTR_NOMAD</Unit>
+			<UpgradeUnit>UNIT_KNIGHT</UpgradeUnit>
+		</Row>
+	</UnitUpgrades>
+	-->
 </GameData>

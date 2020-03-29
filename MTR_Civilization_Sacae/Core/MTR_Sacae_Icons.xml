@@ -22,7 +22,7 @@
 		
 	</IconTextureAtlases>
 	<IconDefinitions>
-		<!--<Row Name="ICON_LEADER_MTR_LYNDIS"		Atlas="ICON_ATLAS_MTR_SACAE" Index="0"/>-->
+		<Row Name="ICON_LEADER_MTR_LYNDIS"		Atlas="ICON_ATLAS_MTR_SACAE" Index="0"/>
 		<Row Name="ICON_CIVILIZATION_MTR_SACAE"		Atlas="ICON_ATLAS_MTR_SACAE" Index="0"/>
 	</IconDefinitions>
 </GameData>

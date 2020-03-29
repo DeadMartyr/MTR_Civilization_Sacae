@@ -4,6 +4,12 @@
 <!-- DateCreated: 2020-03-13 13:38:33 -->
 <GameData>
 	<LocalizedText>
-		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"							Text="Lyndis"/>
+		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"					Text="Lyndis"/>
+		
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME"			Text="Lady of the Wind"/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"	Text="Lady of the Wind Description"/>
+
+
+		<Row Language="en_US"	Tag="LOC_LOADING_INFO_LEADER_MTR_LYNDIS"			Text="Loading Info Placeholder"/>
 	</LocalizedText>
 </GameData>

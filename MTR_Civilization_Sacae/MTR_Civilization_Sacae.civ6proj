@@ -20,8 +20,8 @@
 </Associations>]]></AssociationData>
     <AssemblyName>MTR_Civilization_Sacae</AssemblyName>
     <RootNamespace>MTR_Civilization_Sacae</RootNamespace>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Database_MTR_Sacae"><File>Core/MTR_Sacae_Civilization.xml</File><File>Core/MTR_Sacae_UA.xml</File><File>Core/MTR_Sacae_UI.xml</File><File>Core/MTR_Sacae_UU.xml</File><File>Leader/MTR_Lyndis_Config.xml</File><File>Leader/MTR_Lyndis_Leader.xml</File></UpdateDatabase><UpdateText id="Text_MTR_Sacae"><File>Text/MTR_Sacae_Text.xml</File><File>Leader/MTR_Lyndis_Text.xml</File></UpdateText><ImportFiles id="Import_MTR_Sacae"><File>Textures/MTR_Sacae_M_128.dds</File><File>Textures/MTR_Sacae_M_128.tex</File><File>Textures/MTR_Sacae_M_200.dds</File><File>Textures/MTR_Sacae_M_200.tex</File><File>Textures/MTR_Sacae_M_22.dds</File><File>Textures/MTR_Sacae_M_22.tex</File><File>Textures/MTR_Sacae_M_256.dds</File><File>Textures/MTR_Sacae_M_256.tex</File><File>Textures/MTR_Sacae_M_30.dds</File><File>Textures/MTR_Sacae_M_30.tex</File><File>Textures/MTR_Sacae_M_36.dds</File><File>Textures/MTR_Sacae_M_36.tex</File><File>Textures/MTR_Sacae_M_44.dds</File><File>Textures/MTR_Sacae_M_44.tex</File><File>Textures/MTR_Sacae_M_45.dds</File><File>Textures/MTR_Sacae_M_45.tex</File><File>Textures/MTR_Sacae_M_48.dds</File><File>Textures/MTR_Sacae_M_48.tex</File><File>Textures/MTR_Sacae_M_50.dds</File><File>Textures/MTR_Sacae_M_50.tex</File><File>Textures/MTR_Sacae_M_64.dds</File><File>Textures/MTR_Sacae_M_64.tex</File><File>Textures/MTR_Sacae_M_80.dds</File><File>Textures/MTR_Sacae_M_80.tex</File></ImportFiles><UpdateIcons id="Icons_MTR_Sacae"><File>Core/MTR_Sacae_Icons.xml</File></UpdateIcons><UpdateArt id="Art_MTR_Sacae"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Colors_MTR_Sacae"><File>Core/MTR_Sacae_Colors.xml</File><File>Leader/MTR_Lyndis_Colors.xml</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Database_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Civilization.xml</File><File>Core/MTR_Sacae_UA.xml</File><File>Core/MTR_Sacae_UI.xml</File><File>Core/MTR_Sacae_UU.xml</File><File>Leader/MTR_Lyndis_Config.xml</File><File>Leader/MTR_Lyndis_Leader.xml</File></UpdateDatabase><UpdateText id="Text_MTR_Sacae_Ingame"><File>Text/MTR_Sacae_Text.xml</File><File>Leader/MTR_Lyndis_Text.xml</File></UpdateText><ImportFiles id="Import_MTR_Sacae_Ingame"><File>Textures/MTR_Sacae_M_128.dds</File><File>Textures/MTR_Sacae_M_128.tex</File><File>Textures/MTR_Sacae_M_200.dds</File><File>Textures/MTR_Sacae_M_200.tex</File><File>Textures/MTR_Sacae_M_22.dds</File><File>Textures/MTR_Sacae_M_22.tex</File><File>Textures/MTR_Sacae_M_256.dds</File><File>Textures/MTR_Sacae_M_256.tex</File><File>Textures/MTR_Sacae_M_30.dds</File><File>Textures/MTR_Sacae_M_30.tex</File><File>Textures/MTR_Sacae_M_36.dds</File><File>Textures/MTR_Sacae_M_36.tex</File><File>Textures/MTR_Sacae_M_44.dds</File><File>Textures/MTR_Sacae_M_44.tex</File><File>Textures/MTR_Sacae_M_45.dds</File><File>Textures/MTR_Sacae_M_45.tex</File><File>Textures/MTR_Sacae_M_48.dds</File><File>Textures/MTR_Sacae_M_48.tex</File><File>Textures/MTR_Sacae_M_50.dds</File><File>Textures/MTR_Sacae_M_50.tex</File><File>Textures/MTR_Sacae_M_64.dds</File><File>Textures/MTR_Sacae_M_64.tex</File><File>Textures/MTR_Sacae_M_80.dds</File><File>Textures/MTR_Sacae_M_80.tex</File></ImportFiles><UpdateIcons id="Icons_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Icons.xml</File></UpdateIcons><UpdateArt id="Art_MTR_Sacae_Ingame"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Colors_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Colors.xml</File><File>Leader/MTR_Lyndis_Colors.xml</File></UpdateColors></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Database_MTR_Sacae"><File>Core/MTR_Sacae_Civilization.xml</File><File>Core/MTR_Sacae_UA.xml</File><File>Core/MTR_Sacae_UI.xml</File><File>Leader/MTR_Lyndis_Config.xml</File><File>Leader/MTR_Lyndis_Leader.xml</File><File>Leader/MTR_Lyndis_Background.xml</File><File>Leader/MTR_Lyndis_Animations.xml</File></UpdateDatabase><UpdateText id="Text_MTR_Sacae"><File>Text/MTR_Sacae_Text.xml</File><File>Leader/MTR_Lyndis_Text.xml</File></UpdateText><ImportFiles id="Import_MTR_Sacae"><File>Textures/MTR_Sacae_M_128.dds</File><File>Textures/MTR_Sacae_M_128.tex</File><File>Textures/MTR_Sacae_M_200.dds</File><File>Textures/MTR_Sacae_M_200.tex</File><File>Textures/MTR_Sacae_M_22.dds</File><File>Textures/MTR_Sacae_M_22.tex</File><File>Textures/MTR_Sacae_M_256.dds</File><File>Textures/MTR_Sacae_M_256.tex</File><File>Textures/MTR_Sacae_M_30.dds</File><File>Textures/MTR_Sacae_M_30.tex</File><File>Textures/MTR_Sacae_M_36.dds</File><File>Textures/MTR_Sacae_M_36.tex</File><File>Textures/MTR_Sacae_M_44.dds</File><File>Textures/MTR_Sacae_M_44.tex</File><File>Textures/MTR_Sacae_M_45.dds</File><File>Textures/MTR_Sacae_M_45.tex</File><File>Textures/MTR_Sacae_M_48.dds</File><File>Textures/MTR_Sacae_M_48.tex</File><File>Textures/MTR_Sacae_M_50.dds</File><File>Textures/MTR_Sacae_M_50.tex</File><File>Textures/MTR_Sacae_M_64.dds</File><File>Textures/MTR_Sacae_M_64.tex</File><File>Textures/MTR_Sacae_M_80.dds</File><File>Textures/MTR_Sacae_M_80.tex</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.dds</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.tex</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.dds</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.tex</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.dds</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.tex</File></ImportFiles><UpdateIcons id="Icons_MTR_Sacae"><File>Core/MTR_Sacae_Icons.xml</File></UpdateIcons><UpdateArt id="Art_MTR_Sacae"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Colors_MTR_Sacae"><File>Core/MTR_Sacae_Colors.xml</File><File>Leader/MTR_Lyndis_Colors.xml</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Database_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Civilization.xml</File><File>Core/MTR_Sacae_UA.xml</File><File>Core/MTR_Sacae_UI.xml</File><File>Leader/MTR_Lyndis_Config.xml</File><File>Leader/MTR_Lyndis_Leader.xml</File><File>Leader/MTR_Lyndis_Background.xml</File><File>Leader/MTR_Lyndis_Animations.xml</File></UpdateDatabase><UpdateText id="Text_MTR_Sacae_Ingame"><File>Text/MTR_Sacae_Text.xml</File><File>Leader/MTR_Lyndis_Text.xml</File></UpdateText><ImportFiles id="Import_MTR_Sacae_Ingame"><File>Textures/MTR_Sacae_M_128.dds</File><File>Textures/MTR_Sacae_M_128.tex</File><File>Textures/MTR_Sacae_M_200.dds</File><File>Textures/MTR_Sacae_M_200.tex</File><File>Textures/MTR_Sacae_M_22.dds</File><File>Textures/MTR_Sacae_M_22.tex</File><File>Textures/MTR_Sacae_M_256.dds</File><File>Textures/MTR_Sacae_M_256.tex</File><File>Textures/MTR_Sacae_M_30.dds</File><File>Textures/MTR_Sacae_M_30.tex</File><File>Textures/MTR_Sacae_M_36.dds</File><File>Textures/MTR_Sacae_M_36.tex</File><File>Textures/MTR_Sacae_M_44.dds</File><File>Textures/MTR_Sacae_M_44.tex</File><File>Textures/MTR_Sacae_M_45.dds</File><File>Textures/MTR_Sacae_M_45.tex</File><File>Textures/MTR_Sacae_M_48.dds</File><File>Textures/MTR_Sacae_M_48.tex</File><File>Textures/MTR_Sacae_M_50.dds</File><File>Textures/MTR_Sacae_M_50.tex</File><File>Textures/MTR_Sacae_M_64.dds</File><File>Textures/MTR_Sacae_M_64.tex</File><File>Textures/MTR_Sacae_M_80.dds</File><File>Textures/MTR_Sacae_M_80.tex</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.dds</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.tex</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.dds</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.tex</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.dds</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.tex</File></ImportFiles><UpdateIcons id="Icons_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Icons.xml</File></UpdateIcons><UpdateArt id="Art_MTR_Sacae_Ingame"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Colors_MTR_Sacae_Ingame"><File>Core/MTR_Sacae_Colors.xml</File><File>Leader/MTR_Lyndis_Colors.xml</File></UpdateColors></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -30,6 +30,9 @@
     <None Include="MTR_Civilization_Sacae.Art.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ArtDefs\LeaderFallbacks.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Core\MTR_Sacae_Civilization.xml">
       <SubType>Content</SubType>
     </Content>
@@ -39,6 +42,9 @@
     <Content Include="Core\MTR_Sacae_Icons.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Core\MTR_Sacae_Scripts.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Core\MTR_Sacae_UA.xml">
       <SubType>Content</SubType>
     </Content>
@@ -46,6 +52,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Core\MTR_Sacae_UU.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Animations.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Background.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Leader\MTR_Lyndis_Colors.xml">
@@ -64,6 +76,24 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Questions.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_MTR_LYNDIS.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_MTR_LYNDIS.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_BACKGROUND.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_BACKGROUND.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_NEUTRAL.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_NEUTRAL.tex">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Textures\MTR_Sacae_M_128.dds">
@@ -141,11 +171,18 @@
     <Content Include="Text\MTR_Sacae_Text.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="XLPs\LeaderFallbacks.xlp">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="XLPs\MTR_Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\UILeaders.xlp">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ArtDefs\" />
     <Folder Include="Core" />
     <Folder Include="Leader" />
     <Folder Include="Text" />

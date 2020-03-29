@@ -73,6 +73,7 @@
 		EFFECT_GRANT_HEAL_AFTER_ACTION
 		EFFECT_ADJUST_DISABLE_HEALING (Maybe make them unable to heal by remaining stationary at all)
 		EFFECT_ADJUST_UNIT_HEAL (I think this is the straight up "Heal them this amount" one)
+		EFFECT_ADJUST_UNIT_JUMP_ABILITY (paratrooper?)
 		
 		Events:
 		UnitMoveComplete

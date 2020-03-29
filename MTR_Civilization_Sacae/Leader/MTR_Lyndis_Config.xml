@@ -16,10 +16,12 @@
 			<!--Leader-->
 			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
 			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
-			<LeaderIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderIcon>
-			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_SACAE_UA_NAME</LeaderAbilityName>
-			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_SACAE_UA_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderAbilityIcon>
+			<Portrait>LEADER_MTR_LYNDIS_NEUTRAL</Portrait>
+			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
 		</Row>
 
 		<Row>
@@ -34,10 +36,12 @@
 			<!--Leader-->
 			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
 			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
-			<LeaderIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderIcon>
-			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_SACAE_UA_NAME</LeaderAbilityName>
-			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_SACAE_UA_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderAbilityIcon>
+			<Portrait>LEADER_MTR_LYNDIS_NEUTRAL</Portrait>
+			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
 		</Row>
 
 		<Row>
@@ -52,10 +56,12 @@
 			<!--Leader-->
 			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
 			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
-			<LeaderIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderIcon>
-			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_SACAE_UA_NAME</LeaderAbilityName>
-			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_SACAE_UA_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</LeaderAbilityIcon>
+			<Portrait>LEADER_MTR_LYNDIS_NEUTRAL</Portrait>
+			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
 		</Row>
 	</Players>
 
