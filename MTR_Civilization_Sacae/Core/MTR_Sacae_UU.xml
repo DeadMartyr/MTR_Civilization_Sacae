@@ -7,8 +7,8 @@
 		it to any cavalry that a Sacean Leader owns, then see if I can make it the actual effect I want (will most likely need lua)-->
 	<!--
 		Checklist:	
-		[ ]	Placeholder UU Made
-		[ ]	Movement Abjustment Placeholder on UU
+		[*]	Placeholder UU Made
+		[ ]	Movement Adjustment Placeholder on UU
 		[ ]	Placeholder on all Sacaean Cavalry
 			[ ] Ensure it's not on other leaders' cavalry
 		[ ] Make new effect
@@ -19,8 +19,9 @@
 		<Row	Type="UNIT_MTR_NOMAD"	Kind="KIND_UNIT"/>
 		<!--
 		<Row	Type="ABILITY_MTR_CALLOFTHEWIND"	Kind="KIND_ABILITY"/>
+		
+		<Row	Type="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Kind="KIND_TRAIT"/>
 		-->
-		<Row	Type="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Kind="KIND_TRAIT"/>\
 	</Types>
 
 	<!--
@@ -34,7 +35,9 @@
 			<Name>LOC_UNIT_MTR_NOMAD_NAME</Name>
 			<Description>LOC_UNIT_MTR_NOMAD_DESCRIPTION</Description>
 			<PurchaseYield>YIELD_GOLD</PurchaseYield>
+			<!--
 			<TraitType>TRAIT_UNIT_MTR_NOMAD</TraitType>
+			-->
 			<StrategicResource>RESOURCE_HORSES</StrategicResource>
 			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
 			<MandatoryObsoleteTech>TECH_COMBUSTION</MandatoryObsoleteTech>

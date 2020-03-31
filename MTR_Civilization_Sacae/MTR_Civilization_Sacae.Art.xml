@@ -7,7 +7,9 @@
 	<artConsumers>
 		<Element>
 			<consumerName text="Units"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="Units.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="Unit"/>
 				<Element text="VFX"/>
@@ -242,7 +244,9 @@
 		</Element>
 		<Element>
 			<consumerName text="Improvements"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="Improvements.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
 		</Element>
@@ -479,8 +483,10 @@
 		<Element>
 			<libraryName text="UITexture"/>
 			<relativePackagePaths>
-				<Element text="MTR_Icons"/>
 				<Element text="UILeaders"/>
+				<Element text="MTR_Lyndis_Icons"/>
+				<Element text="MTR_Icons"/>
+				<Element text="MTR_Sacae_UU_Icons"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

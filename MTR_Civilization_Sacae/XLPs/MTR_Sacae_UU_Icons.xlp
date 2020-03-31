@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>451</build>
+		<revision>343</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="MTR_Sacae_UU_Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="MTR_NomadUU_M_22"/>
+			<m_ObjectName text="MTR_NomadUU_M_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_NomadUU_M_32"/>
+			<m_ObjectName text="MTR_NomadUU_M_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_NomadUU_M_38"/>
+			<m_ObjectName text="MTR_NomadUU_M_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_NomadUU_M_50"/>
+			<m_ObjectName text="MTR_NomadUU_M_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_NomadUU_M_80"/>
+			<m_ObjectName text="MTR_NomadUU_M_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_NomadUU_M_256"/>
+			<m_ObjectName text="MTR_NomadUU_M_256"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

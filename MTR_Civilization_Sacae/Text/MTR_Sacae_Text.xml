@@ -27,7 +27,7 @@
 		<!-- ============================================================ -->
 		<!-- =			Cities			- MTR_Sacae_Civilization.xml	= -->
 		<!-- ============================================================ -->
-		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_1"			Text="Lyn's Tribe"/>
+		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_1"			Text="Lorca Tribe"/>
 		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_2"			Text="Tribe 2"/>
 		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_3"			Text="Tribe 3"/>
 		<Row Language="en_US"	Tag="LOC_CITY_NAME_MTR_SACAE_4"			Text="Tribe 4"/>
@@ -72,6 +72,12 @@
 		<!-- ============================================================ -->
 		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"			Text="Nomad Camp"/>
 		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	Text="Unique Improvement unique to the Sacaean Nomads. Grants +1 [ICON_FOOD] Food, +1 [ICON_CULTURE] Culture, +1 [ICON_PRODUCTION] Production. Must be built on plains without hills."/>
+
+		<!-- ============================================================ -->
+		<!-- =			NomadUU			- MTR_Sacae_UU.xml				= -->
+		<!-- ============================================================ -->
+		<Row Language="en_US"	Tag="LOC_UNIT_MTR_NOMAD_NAME"			Text="Nomad"/>
+		<Row Language="en_US"	Tag="LOC_UNIT_MTR_NOMAD_DESCRIPTION"	Text="Sacean Unique Unit. Does not require Horse strategic resource to heal."/>
 
 	</LocalizedText>
 </GameData>

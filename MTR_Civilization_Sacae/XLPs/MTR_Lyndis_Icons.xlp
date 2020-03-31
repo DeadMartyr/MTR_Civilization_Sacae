@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>451</build>
+		<revision>343</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="MTR_Lyndis_Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="MTR_LYNDIS_C_256"/>
+			<m_ObjectName text="MTR_LYNDIS_C_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_LYNDIS_C_45"/>
+			<m_ObjectName text="MTR_LYNDIS_C_45"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+
