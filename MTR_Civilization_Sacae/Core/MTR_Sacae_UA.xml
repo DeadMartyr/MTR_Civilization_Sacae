@@ -25,11 +25,11 @@
 		</Row>
 	</CivilizationTraits>
 
-	<!--
-	<TraitModifiers>
-		<Row TraitType="TRAIT_CIVILIZATION_MTR_SACAE_UA"	ModifierId="MODTYPE_MTR_SACAE_UA_CAVALRY_HEALSONMOVE"/>
-	</TraitModifiers>
 	
+	<TraitModifiers>
+		<Row TraitType="TRAIT_CIVILIZATION_MTR_SACAE_UA"	ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"/>
+	</TraitModifiers>
+	<!--
 	
 	<DynamicModifiers>
 		<Row ModifierType="MODTYPE_MTR_SACAE_UA_CAVALRY_HEALSONMOVE"	CollectionType="COLLECTION_OWNER"	EffectType="EFFECT_ADJUST_UNIT_MOVEMENT"/>

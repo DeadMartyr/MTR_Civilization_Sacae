@@ -17,13 +17,17 @@
 	
 	<Types>
 		<Row	Type="UNIT_MTR_NOMAD"	Kind="KIND_UNIT"/>
-		<!--
 		<Row	Type="ABILITY_MTR_CALLOFTHEWIND"	Kind="KIND_ABILITY"/>
-		
 		<Row	Type="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Kind="KIND_TRAIT"/>
-		-->
 	</Types>
 
+	<Traits>
+		<Row	TraitType="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Name="LOC_UNIT_MTR_NOMAD_NAME"/>
+	</Traits>
+
+	<CivilizationTraits>
+		<Row	TraitType="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	CivilizationType="CIVILIZATION_MTR_SACAE"/>
+	</CivilizationTraits>
 	<!--
 	<UnitAiInfos>
 		<Row	UnitType="UNIT_MTR_NOMAD"	AiType="UNITTYPE_RANGED"/>
@@ -35,9 +39,7 @@
 			<Name>LOC_UNIT_MTR_NOMAD_NAME</Name>
 			<Description>LOC_UNIT_MTR_NOMAD_DESCRIPTION</Description>
 			<PurchaseYield>YIELD_GOLD</PurchaseYield>
-			<!--
-			<TraitType>TRAIT_UNIT_MTR_NOMAD</TraitType>
-			-->
+			<TraitType>TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU</TraitType>
 			<StrategicResource>RESOURCE_HORSES</StrategicResource>
 			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
 			<MandatoryObsoleteTech>TECH_COMBUSTION</MandatoryObsoleteTech>
@@ -56,14 +58,8 @@
 		</Row>
 	</Units>
 
-	<!--
-	<Tags>
-		<Row	Tag="CLASS_MTR_NOMAD"	Vocabulary="ABILITY_CLASS"/>
-	</Tags>
-
 	<TypeTags>
 		<Row	Type="UNIT_MTR_NOMAD"	Tag="CLASS_RANGED_CAVALRY"/>
-		<Row	Type="UNIT_MTR_NOMAD"	Tag="CLASS_MTR_NOMAD"/>
 	</TypeTags>
 
 	<UnitUpgrades>
@@ -73,4 +69,94 @@
 		</Row>
 	</UnitUpgrades>
 	-->
+
+
+	<!--	So to my understanding,
+			A unit Ability has two Modifiers
+				One that just grants the ability to all units with the "Tag"s listed in the Table "TypeTags"
+					-"MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"
+				Another that is the actual functional modifier
+					-"MODIFIER_MTR_SACAE_MOVEMENTBUFF"
+			
+			This functions as of right now but there is a redundancy as the Modifier has a REQSET that checks the tag of the unit, 
+			however the first "GRANT ABILITY" modifier links it back to the "TypeTags" Table where it states which tags the ability gets associated with
+			
+			THIS APPLIED TO ALL PLAYERS AND NOT JUST SACAE
+	-->
+	
+	<!-- ============================================================ -->
+	<!-- =			MODIFIER & MODIFIER ARGUMENTS					= -->
+	<!-- ============================================================ -->
+
+	<Modifiers>
+		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFF"			ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/><!--SubjectRequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"-->
+		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"	ModifierType="MODIFIER_PLAYER_UNITS_GRANT_ABILITY"	Permanent="true"/>
+	</Modifiers>
+
+	<ModifierArguments>
+		<!--Reference "EFFECT_ADJUST_UNIT_MOVEMENT"-->	
+		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFF"			Name="Amount"		Value="50"/>
+		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"	Name="AbilityType"	Value="ABILITY_MTR_CALLOFTHEWIND"/>
+	</ModifierArguments>
+
+	<TraitModifiers>
+		
+	</TraitModifiers>
+
+	<!-- ============================================================ -->
+	<!-- =						REQSETS								= -->
+	<!-- ============================================================ -->
+
+	
+	<RequirementSets>
+		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementSetType="REQUIREMENTSET_TEST_ANY"/>
+	</RequirementSets>
+	
+	<RequirementSetRequirements>
+		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementId="REQ_MTR_UNIT_IS_HEAVYCAVALRY"/>
+		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementId="REQ_MTR_UNIT_IS_LIGHTCAVALRY"/>
+		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementId="REQ_MTR_UNIT_IS_RANGEDCAVALRY"/>
+	</RequirementSetRequirements>
+	
+
+	<!-- ============================================================ -->
+	<!-- =				INDIVIDUAL REQUIREMENTS						= -->
+	<!-- ============================================================ -->
+
+	
+	<Requirements>
+		<Row RequirementId="REQ_MTR_UNIT_IS_HEAVYCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"/>
+		<Row RequirementId="REQ_MTR_UNIT_IS_LIGHTCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"/>
+		<Row RequirementId="REQ_MTR_UNIT_IS_RANGEDCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"/>
+	</Requirements>
+
+	<RequirementArguments>
+		<Row RequirementId="REQ_MTR_UNIT_IS_HEAVYCAVALRY"	Name="Tag"	Value="CLASS_HEAVY_CAVALRY"/>
+		<Row RequirementId="REQ_MTR_UNIT_IS_LIGHTCAVALRY"	Name="Tag"	Value="CLASS_LIGHT_CAVALRY"/>
+		<Row RequirementId="REQ_MTR_UNIT_IS_RANGEDCAVALRY"	Name="Tag"	Value="CLASS_RANGED_CAVALRY"/>
+	</RequirementArguments>
+	
+
+	<!-- ============================================================ -->
+	<!-- =				ABILITY DEFINITION							= -->
+	<!-- ============================================================ -->
+	<TypeTags>
+		<Row Type="ABILITY_MTR_CALLOFTHEWIND"	Tag="CLASS_HEAVY_CAVALRY"/>
+		<Row Type="ABILITY_MTR_CALLOFTHEWIND"	Tag="CLASS_LIGHT_CAVALRY"/>
+		<Row Type="ABILITY_MTR_CALLOFTHEWIND"	Tag="CLASS_RANGED_CAVALRY"/>
+	</TypeTags>
+
+	<UnitAbilities>
+		<Row>
+			<UnitAbilityType>ABILITY_MTR_CALLOFTHEWIND</UnitAbilityType>
+			<Name>LOC_ABILITY_MTR_CALLOFTHEWIND_NAME</Name>
+			<Description>LOC_ABILITY_MTR_CALLOFTHEWIND_DESCRIPTION</Description>
+			<Inactive>true</Inactive>
+		</Row>
+	</UnitAbilities>
+
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_MTR_CALLOFTHEWIND"	ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFF"/>
+	</UnitAbilityModifiers>
+	
 </GameData>
