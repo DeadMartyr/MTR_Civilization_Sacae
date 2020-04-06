@@ -183,35 +183,35 @@
 				<m_Fields>
 					<m_Values>
 						<Element class="AssetObjects..ArtDefReferenceValue">
-							<m_ElementName text=""/>
+							<m_ElementName text="Cavalry"/>
 							<m_RootCollectionName text="UnitMovementTypes"/>
 							<m_ArtDefPath text="Units.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
-							<m_TemplateName text=""/>
+							<m_TemplateName text="Units"/>
 							<m_ParamName text="Movement"/>
 						</Element>
 						<Element class="AssetObjects..ArtDefReferenceValue">
-							<m_ElementName text=""/>
+							<m_ElementName text="SakaHorseArcherCombat"/>
 							<m_RootCollectionName text="MemberCombat"/>
 							<m_ArtDefPath text="Units.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
-							<m_TemplateName text=""/>
+							<m_TemplateName text="Units"/>
 							<m_ParamName text="Combat"/>
 						</Element>
 						<Element class="AssetObjects..ArtDefReferenceValue">
-							<m_ElementName text=""/>
+							<m_ElementName text="MEAT"/>
 							<m_RootCollectionName text="MaterialTypes"/>
 							<m_ArtDefPath text="VFX.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
-							<m_TemplateName text=""/>
+							<m_TemplateName text="VFX"/>
 							<m_ParamName text="VFXMaterialType"/>
 						</Element>
 						<Element class="AssetObjects..ArtDefReferenceValue">
-							<m_ElementName text=""/>
+							<m_ElementName text="MEAT"/>
 							<m_RootCollectionName text="MaterialTypes"/>
 							<m_ArtDefPath text="VFX.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
-							<m_TemplateName text=""/>
+							<m_TemplateName text="VFX"/>
 							<m_ParamName text="VFXWeaponImpact"/>
 						</Element>
 						<Element class="AssetObjects..FloatValue">
