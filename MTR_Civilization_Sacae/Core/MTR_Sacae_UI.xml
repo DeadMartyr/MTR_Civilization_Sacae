@@ -52,15 +52,18 @@
 		<Row Id="550"	ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldType="YIELD_CULTURE"	BonusYieldChange="2"	PrereqCivic="CIVIC_MEDIEVAL_FAIRES"/>
 	</Improvement_BonusYieldChanges>
 
-	<!--
+	
 	<Improvement_Adjacencies>
-		
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldChangeId="YIELDCHANGE_MTR_SACAE_UI_PASTURE"/>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldChangeId="YIELDCHANGE_MTR_SACAE_UI_PLAINS_FLAT"/>
+		<Row ImprovementType="IMPROVEMENT_MTR_SACAE_UI"	YieldChangeId="YIELDCHANGE_MTR_SACAE_UI_PLAINS_HILL"/>
 	</Improvement_Adjacencies>
-	-->
+	
 
-	<!--
 	<Adjacency_YieldChanges>
-		
+		<Row ID="YIELDCHANGE_MTR_SACAE_UI_PASTURE"		Description="Placeholder"	YieldType="YIELD_FOOD"		YieldChange="1"	TilesRequired="1"	AdjacentImprovement="IMPROVEMENT_PASTURE"	AdjacentTerrain="NULL"					PrereqCivic="NULL"/>
+		<Row ID="YIELDCHANGE_MTR_SACAE_UI_PLAINS_FLAT"	Description="Placeholder"	YieldType="YIELD_CULTURE"	YieldChange="1"	TilesRequired="2"	AdjacentImprovement="NULL"					AdjacentTerrain="TERRAIN_PLAINS"		PrereqCivic="NULL"/>
+		<Row ID="YIELDCHANGE_MTR_SACAE_UI_PLAINS_HILL"	Description="Placeholder"	YieldType="YIELD_CULTURE"	YieldChange="1"	TilesRequired="2"	AdjacentImprovement="NULL"					AdjacentTerrain="TERRAIN_PLAINS_HILLS"	PrereqCivic="NULL"/>
 	</Adjacency_YieldChanges>
-	-->
+
 </GameData>

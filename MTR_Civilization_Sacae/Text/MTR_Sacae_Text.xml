@@ -65,19 +65,19 @@
 		<!-- =			CallOfTheWindUA	- MTR_Sacae_UA.xml				= -->
 		<!-- ============================================================ -->
 		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME"				Text="Call of the Wind"/>
-		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION"		Text="Calvary Units, both light and heavy, heal upon moving per tile moved"/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION"		Text="Light, Heavy, and Ranged Cavalry heal based on total distance moved from their position at the start of the turn. Scales with distance however caps at a possible 50 per turn. Applies upon moving however annot be reapplied by moving back and forth."/>
 		
 		<!-- ============================================================ -->
 		<!-- =			NomadCampUI		- MTR_Sacae_UI.xml				= -->
 		<!-- ============================================================ -->
 		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"			Text="Nomad Camp"/>
-		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	Text="Unique Improvement unique to the Sacaean Nomads. Grants +1 [ICON_FOOD] Food, +1 [ICON_CULTURE] Culture, +1 [ICON_PRODUCTION] Production. Must be built on plains without hills."/>
+		<Row Language="en_US"	Tag="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	Text="Unique Improvement available to the Sacaean Nomads. Grants +1 [ICON_FOOD] Food, +1 [ICON_CULTURE] Culture, +1 [ICON_PRODUCTION] Production. Must be built on plains without hills and cannot be placed adjacent to another Nomad Camp."/>
 
 		<!-- ============================================================ -->
 		<!-- =			NomadUU			- MTR_Sacae_UU.xml				= -->
 		<!-- ============================================================ -->
 		<Row Language="en_US"	Tag="LOC_UNIT_MTR_NOMAD_NAME"			Text="Nomad"/>
-		<Row Language="en_US"	Tag="LOC_UNIT_MTR_NOMAD_DESCRIPTION"	Text="Sacean Unique Unit. Does not require Horse strategic resource to heal."/>
+		<Row Language="en_US"	Tag="LOC_UNIT_MTR_NOMAD_DESCRIPTION"	Text="Sacean Unique Unit. Does not exert a Zone of Control. Costs 15 [RES_HORSES] Horses to produce. Can move after attacking."/>
 
 	</LocalizedText>
 </GameData>

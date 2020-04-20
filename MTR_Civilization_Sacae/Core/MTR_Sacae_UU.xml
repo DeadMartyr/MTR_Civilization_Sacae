@@ -3,24 +3,13 @@
 <!-- Author: Angelo -->
 <!-- DateCreated: 2020-02-23 13:45:55 -->
 <GameData>
-	<!--To affect units, I believe it has to be a "unit ability" rather than a civ one, I just want to see if I can get a placeholder effect to work on this single UU, then see if i can broaden 
-		it to any cavalry that a Sacean Leader owns, then see if I can make it the actual effect I want (will most likely need lua)-->
-	<!--
-		Checklist:	
-		[*]	Placeholder UU Made
-		[ ]	Movement Adjustment Placeholder on UU
-		[ ]	Placeholder on all Sacaean Cavalry
-			[ ] Ensure it's not on other leaders' cavalry
-		[ ] Make new effect
-		[ ] Implement Effect
-	-->
-	
 	<Types>
-		<Row	Type="UNIT_MTR_NOMAD"	Kind="KIND_UNIT"/>
-		<Row	Type="ABILITY_MTR_CALLOFTHEWIND"	Kind="KIND_ABILITY"/>
+		<Row	Type="UNIT_MTR_NOMAD"						Kind="KIND_UNIT"/>
+		<Row	Type="ABILITY_MTR_SACAE_UU"					Kind="KIND_ABILITY"/>
 		<Row	Type="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Kind="KIND_TRAIT"/>
 	</Types>
 
+	<!--Inputting Trait Information and associating it with the Sacaen Civ-->
 	<Traits>
 		<Row	TraitType="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	Name="LOC_UNIT_MTR_NOMAD_NAME"/>
 	</Traits>
@@ -28,11 +17,11 @@
 	<CivilizationTraits>
 		<Row	TraitType="TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU"	CivilizationType="CIVILIZATION_MTR_SACAE"/>
 	</CivilizationTraits>
-	<!--
+	
 	<UnitAiInfos>
 		<Row	UnitType="UNIT_MTR_NOMAD"	AiType="UNITTYPE_RANGED"/>
 	</UnitAiInfos>
-	-->
+	
 	<Units>
 		<Row>
 			<UnitType>UNIT_MTR_NOMAD</UnitType>
@@ -41,16 +30,16 @@
 			<PurchaseYield>YIELD_GOLD</PurchaseYield>
 			<TraitType>TRAIT_CIVILIZATION_UNIT_MTR_SACAE_UU</TraitType>
 			<StrategicResource>RESOURCE_HORSES</StrategicResource>
-			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
-			<MandatoryObsoleteTech>TECH_COMBUSTION</MandatoryObsoleteTech>
+			<PrereqCivic>CIVIC_FEUDALISM</PrereqCivic>
+			<ObsoleteCivic>CIVIC_MERCANTILISM</ObsoleteCivic> <!--It's MandatoryObsoleteTech for techs but only ObsoleteCivic for civics for some reason-->
 			<Cost>120</Cost>
 			<Maintenance>2</Maintenance>
-			<BaseMoves>4</BaseMoves>
+			<BaseMoves>3</BaseMoves>
 			<BaseSightRange>2</BaseSightRange>
-			<ZoneOfControl>true</ZoneOfControl>
+			<ZoneOfControl>false</ZoneOfControl>
 			<Domain>DOMAIN_LAND</Domain>
-			<Combat>40</Combat>
-			<RangedCombat>50</RangedCombat>
+			<Combat>28</Combat>
+			<RangedCombat>38</RangedCombat>
 			<Range>1</Range>
 			<FormationClass>FORMATION_CLASS_LAND_COMBAT</FormationClass>
 			<PromotionClass>PROMOTION_CLASS_RANGED</PromotionClass>
@@ -58,30 +47,33 @@
 		</Row>
 	</Units>
 
+	<!--Gathering Storm Introduced Maintenance Mechanics and changed how strategic resources worked-->
+	<Units_XP2>
+		<Row>
+			<UnitType>UNIT_MTR_NOMAD</UnitType>
+			<ResourceCost>15</ResourceCost>
+		</Row>
+	</Units_XP2>
+	
 	<TypeTags>
-		<Row	Type="UNIT_MTR_NOMAD"	Tag="CLASS_RANGED_CAVALRY"/>
+		<Row Type="UNIT_MTR_NOMAD"			Tag="CLASS_RANGED_CAVALRY"/>
+		<Row Type="UNIT_MTR_NOMAD"			Tag="CLASS_MTR_SACAE"/> <!--See below for this Tag's definition-->
 	</TypeTags>
 
 	<UnitUpgrades>
 		<Row>
 			<Unit>UNIT_MTR_NOMAD</Unit>
-			<UpgradeUnit>UNIT_KNIGHT</UpgradeUnit>
+			<UpgradeUnit>UNIT_FIELD_CANNON</UpgradeUnit>
 		</Row>
 	</UnitUpgrades>
-	-->
 
 
 	<!--	So to my understanding,
 			A unit Ability has two Modifiers
 				One that just grants the ability to all units with the "Tag"s listed in the Table "TypeTags"
-					-"MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"
+					-"MOD_MTR_SACAE_MOVEMENTBUFFABILITY"
 				Another that is the actual functional modifier
-					-"MODIFIER_MTR_SACAE_MOVEMENTBUFF"
-			
-			This functions as of right now but there is a redundancy as the Modifier has a REQSET that checks the tag of the unit, 
-			however the first "GRANT ABILITY" modifier links it back to the "TypeTags" Table where it states which tags the ability gets associated with
-			
-			THIS APPLIED TO ALL PLAYERS AND NOT JUST SACAE
+					-"MOD_MTR_SACAE_MOVEMENTBUFF"
 	-->
 	
 	<!-- ============================================================ -->
@@ -89,25 +81,55 @@
 	<!-- ============================================================ -->
 
 	<Modifiers>
-		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFF"			ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/><!--SubjectRequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"-->
-		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"	ModifierType="MODIFIER_PLAYER_UNITS_GRANT_ABILITY"	Permanent="true"/>
+		<Row ModifierId="MOD_MTR_SACAE_UUATTACKMOVE"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_ATTACK_AND_MOVE"/>
+		<Row ModifierId="MOD_MTR_SACAE_UUSTARTMOVE"		ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_CLEAR_TERRAIN_START_MOVEMENT"/>
+		<Row ModifierId="MOD_MTR_SACAE_UUABILITY"		ModifierType="MODIFIER_PLAYER_UNITS_GRANT_ABILITY"	Permanent="true"/>
 	</Modifiers>
 
 	<ModifierArguments>
-		<!--Reference "EFFECT_ADJUST_UNIT_MOVEMENT"-->	
-		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFF"			Name="Amount"		Value="50"/>
-		<Row ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFFABILITY"	Name="AbilityType"	Value="ABILITY_MTR_CALLOFTHEWIND"/>
+		<!--Reference "EFFECT_ADJUST_UNIT_ATTACK_AND_MOVE"-->	
+		<Row ModifierId="MOD_MTR_SACAE_UUATTACKMOVE"	Name="CanMove"		Value="true"/>
+		<Row ModifierId="MOD_MTR_SACAE_UUSTARTMOVE"		Name="Amount"		Value="1"/>
+		<Row ModifierId="MOD_MTR_SACAE_UUABILITY"		Name="AbilityType"	Value="ABILITY_MTR_SACAE_UU"/>
 	</ModifierArguments>
 
-	<TraitModifiers>
-		
-	</TraitModifiers>
+	<!-- ============================================================ -->
+	<!-- =				ABILITY DEFINITION							= -->
+	<!-- ============================================================ -->
+	<Tags>
+		<Row Tag="CLASS_MTR_SACAE"			Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	
+	<TypeTags>
+		<Row Type="ABILITY_MTR_SACAE_UU"	Tag="CLASS_MTR_SACAE"/>
+	</TypeTags>
 
+	<UnitAbilities>
+		<Row>
+			<UnitAbilityType>ABILITY_MTR_SACAE_UU</UnitAbilityType>
+			<Name>LOC_ABILITY_MTR_SACAE_UU_NAME</Name>
+			<Description>LOC_ABILITY_MTR_SACAE_UU_DESCRIPTION</Description>
+			<Inactive>true</Inactive>
+		</Row>
+	</UnitAbilities>
+
+	<!--Modifiers which the Ability activates-->
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_MTR_SACAE_UU"	ModifierId="MOD_MTR_SACAE_UUATTACKMOVE"/>
+		<Row UnitAbilityType="ABILITY_MTR_SACAE_UU"	ModifierId="MOD_MTR_SACAE_UUSTARTMOVE"/>
+	</UnitAbilityModifiers>
+
+
+	<!-- ============================================================================================================================ -->
+	<!-- =	This section is unneeded as the capability of associting the effect on units can be done through the "TypeTags" table	= -->
+	<!-- =	This ReqSet is 100% redundant, I am keeping it for my own personal reference on how to structure ReqSets and Reqs		= -->
+	<!-- ============================================================================================================================ -->
+	
 	<!-- ============================================================ -->
 	<!-- =						REQSETS								= -->
 	<!-- ============================================================ -->
 
-	
+	<!--
 	<RequirementSets>
 		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementSetType="REQUIREMENTSET_TEST_ANY"/>
 	</RequirementSets>
@@ -117,13 +139,13 @@
 		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementId="REQ_MTR_UNIT_IS_LIGHTCAVALRY"/>
 		<Row RequirementSetId="REQSET_MTR_UNIT_IS_CAVALRY"		RequirementId="REQ_MTR_UNIT_IS_RANGEDCAVALRY"/>
 	</RequirementSetRequirements>
-	
+	-->
 
 	<!-- ============================================================ -->
 	<!-- =				INDIVIDUAL REQUIREMENTS						= -->
 	<!-- ============================================================ -->
 
-	
+	<!--
 	<Requirements>
 		<Row RequirementId="REQ_MTR_UNIT_IS_HEAVYCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"/>
 		<Row RequirementId="REQ_MTR_UNIT_IS_LIGHTCAVALRY"	RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"/>
@@ -135,28 +157,5 @@
 		<Row RequirementId="REQ_MTR_UNIT_IS_LIGHTCAVALRY"	Name="Tag"	Value="CLASS_LIGHT_CAVALRY"/>
 		<Row RequirementId="REQ_MTR_UNIT_IS_RANGEDCAVALRY"	Name="Tag"	Value="CLASS_RANGED_CAVALRY"/>
 	</RequirementArguments>
-	
-
-	<!-- ============================================================ -->
-	<!-- =				ABILITY DEFINITION							= -->
-	<!-- ============================================================ -->
-	<TypeTags>
-		<Row Type="ABILITY_MTR_CALLOFTHEWIND"	Tag="CLASS_HEAVY_CAVALRY"/>
-		<Row Type="ABILITY_MTR_CALLOFTHEWIND"	Tag="CLASS_LIGHT_CAVALRY"/>
-		<Row Type="ABILITY_MTR_CALLOFTHEWIND"	Tag="CLASS_RANGED_CAVALRY"/>
-	</TypeTags>
-
-	<UnitAbilities>
-		<Row>
-			<UnitAbilityType>ABILITY_MTR_CALLOFTHEWIND</UnitAbilityType>
-			<Name>LOC_ABILITY_MTR_CALLOFTHEWIND_NAME</Name>
-			<Description>LOC_ABILITY_MTR_CALLOFTHEWIND_DESCRIPTION</Description>
-			<Inactive>true</Inactive>
-		</Row>
-	</UnitAbilities>
-
-	<UnitAbilityModifiers>
-		<Row UnitAbilityType="ABILITY_MTR_CALLOFTHEWIND"	ModifierId="MODIFIER_MTR_SACAE_MOVEMENTBUFF"/>
-	</UnitAbilityModifiers>
-	
+	-->
 </GameData>
