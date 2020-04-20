@@ -65,7 +65,7 @@
 		<!-- =			CallOfTheWindUA	- MTR_Sacae_UA.xml				= -->
 		<!-- ============================================================ -->
 		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME"				Text="Call of the Wind"/>
-		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION"		Text="Light, Heavy, and Ranged Cavalry heal based on total distance moved from their position at the start of the turn. Scales with distance however caps at a possible 50 per turn. Applies upon moving however annot be reapplied by moving back and forth."/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION"		Text="Light, Heavy, and Ranged Cavalry heal based on total distance moved from their position at the start of the turn. Scales with distance however caps at a possible 50 per turn. Applies upon moving however cannot be reapplied by moving back and forth."/>
 		
 		<!-- ============================================================ -->
 		<!-- =			NomadCampUI		- MTR_Sacae_UI.xml				= -->

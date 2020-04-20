@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Icons -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-04-20 18:49:17 -->
+<GameData>
+	<IconTextureAtlases>
+		<!--LEADER ICONS-->
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="32"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_32.dds"/>
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="45"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_45.dds"/>
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="50"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_50.dds"/>
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="55"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_55.dds"/>
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="64"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_64.dds"/>
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="80"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_80.dds"/>
+		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Lyndis_C_256.dds"/>
+	</IconTextureAtlases>
+
+	<IconDefinitions>
+		<Row Name="ICON_LEADER_MTR_LYNDIS"			Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+	</IconDefinitions>
+</GameData>

@@ -10,12 +10,32 @@
 	<m_PackageName text="MTR_Lyndis_Icons"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="MTR_LYNDIS_C_256"/>
-			<m_ObjectName text="MTR_LYNDIS_C_256"/>
+			<m_EntryID text="MTR_Lyndis_C_32"/>
+			<m_ObjectName text="MTR_Lyndis_C_32"/>
 		</Element>
 		<Element>
-			<m_EntryID text="MTR_LYNDIS_C_45"/>
-			<m_ObjectName text="MTR_LYNDIS_C_45"/>
+			<m_EntryID text="MTR_Lyndis_C_45"/>
+			<m_ObjectName text="MTR_Lyndis_C_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_Lyndis_C_50"/>
+			<m_ObjectName text="MTR_Lyndis_C_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_Lyndis_C_55"/>
+			<m_ObjectName text="MTR_Lyndis_C_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_Lyndis_C_64"/>
+			<m_ObjectName text="MTR_Lyndis_C_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_Lyndis_C_80"/>
+			<m_ObjectName text="MTR_Lyndis_C_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MTR_Lyndis_C_256"/>
+			<m_ObjectName text="MTR_Lyndis_C_256"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

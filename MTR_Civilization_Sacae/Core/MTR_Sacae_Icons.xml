@@ -4,7 +4,7 @@
 <!-- DateCreated: 2020-03-07 9:02:58 -->
 <GameData>
 	<IconTextureAtlases>
-		
+		<!--CIVILIZATION ICONS-->
 		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="22"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_22.dds"/>
 		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="30"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_30.dds"/>
 		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="36"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_36.dds"/>
@@ -21,10 +21,6 @@
 		<Row Name="ICON_ATLAS_MTR_SACAE" IconSize="256"	IconsPerRow="1" IconsPerColumn="1" Filename="MTR_Sacae_M_256.dds"/>
 
 		
-		<!--LEADER ICONS-->
-		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="45"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_LYNDIS_C_45.dds"/>
-		<Row Name="ICON_ATLAS_MTR_LYNDIS"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_LYNDIS_C_256.dds"/>
-		
 		<!--SACAE UU ICONS-->
 		<Row Name="ICON_ATLAS_MTR_SACAE_UU"	IconSize="22"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_NomadUU_M_22.dds"/>
 		<Row Name="ICON_ATLAS_MTR_SACAE_UU"	IconSize="32"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_NomadUU_M_32.dds"/>
@@ -35,7 +31,6 @@
 		
 	</IconTextureAtlases>
 	<IconDefinitions>
-		<Row Name="ICON_LEADER_MTR_LYNDIS"			Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
 		<Row Name="ICON_CIVILIZATION_MTR_SACAE"		Atlas="ICON_ATLAS_MTR_SACAE"	Index="0"/>
 		<Row Name="ICON_UNIT_MTR_NOMAD"				Atlas="ICON_ATLAS_MTR_SACAE_UU"	Index="0"/>
 	</IconDefinitions>
