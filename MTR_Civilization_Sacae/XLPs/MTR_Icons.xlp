@@ -57,6 +57,10 @@
 			<m_EntryID text="MTR_Sacae_M_256"/>
 			<m_ObjectName text="MTR_Sacae_M_256"/>
 		</Element>
+		<Element>
+			<m_EntryID text="MTR_Sacae_C_256"/>
+			<m_ObjectName text="MTR_Sacae_C_256"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

@@ -173,6 +173,34 @@ end
 --====================================================================
 --Runs on PlayerTurnDeactivated
 --====================================================================
+function MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired)
+	print("MTR_LyndisUA_StripDummies");
+	if ((pCityBuildings:HasBuilding(iDummyStack1) == true) and (iStacksRequired~=1)) then
+		pCityBuildings:RemoveBuilding(iDummyStack1);
+		print("Reset Stacks from 1");
+	end
+	if ((pCityBuildings:HasBuilding(iDummyStack2) == true) and (iStacksRequired~=2)) then
+		pCityBuildings:RemoveBuilding(iDummyStack2);
+		print("Reset Stacks from 2");
+	end
+	if ((pCityBuildings:HasBuilding(iDummyStack3) == true) and (iStacksRequired~=3)) then
+		pCityBuildings:RemoveBuilding(iDummyStack3);
+		print("Reset Stacks from 3");
+	end
+	if ((pCityBuildings:HasBuilding(iDummyStack4) == true) and (iStacksRequired~=4)) then
+		pCityBuildings:RemoveBuilding(iDummyStack4);
+		print("Reset Stacks from 4");
+	end
+	if ((pCityBuildings:HasBuilding(iDummyStack5) == true) and (iStacksRequired~=5)) then
+		pCityBuildings:RemoveBuilding(iDummyStack5);
+		print("Reset Stacks from 5");
+	end
+	if ((pCityBuildings:HasBuilding(iDummyStack6) == true) and (iStacksRequired~=6)) then
+		pCityBuildings:RemoveBuilding(iDummyStack6);
+		print("Reset Stacks from 6");
+	end
+end
+
 function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 	print("MTR_LyndisUA_AdjustCityDummy");
 	local iStacksRequired = math.floor(iCountedTiles / iPointsPerStack);
@@ -181,69 +209,61 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 	local pCityBuildings = pCity:GetBuildings() -- Get city buildings
 	
 	
-	--Stripping buildings from city just to ensure that two will never be on at the same time
-	if (pCityBuildings:HasBuilding(iDummyStack1) == true) then
-		pCityBuildings:RemoveBuilding(iDummyStack1);
-		print("Reset Stacks from 1");
-	end
-	if (pCityBuildings:HasBuilding(iDummyStack2) == true) then
-		pCityBuildings:RemoveBuilding(iDummyStack2);
-		print("Reset Stacks from 2");
-	end
-	if (pCityBuildings:HasBuilding(iDummyStack3) == true) then
-		pCityBuildings:RemoveBuilding(iDummyStack3);
-		print("Reset Stacks from 3");
-	end
-	if (pCityBuildings:HasBuilding(iDummyStack4) == true) then
-		pCityBuildings:RemoveBuilding(iDummyStack4);
-		print("Reset Stacks from 4");
-	end
-	if (pCityBuildings:HasBuilding(iDummyStack5) == true) then
-		pCityBuildings:RemoveBuilding(iDummyStack5);
-		print("Reset Stacks from 5");
-	end
-	if (pCityBuildings:HasBuilding(iDummyStack6) == true) then
-		pCityBuildings:RemoveBuilding(iDummyStack6);
-		print("Reset Stacks from 6");
-	end
-	
-	
 	--needed to create the dummy buildings for some reason
 	local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
 	local iPlot = pPlot:GetIndex()
 	
 	if(iStacksRequired==0) then
 		print("Zero Stacks");
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		return --abort if 0 stacks
 	end
 	if(iStacksRequired==1) then
 		print("One Stack");
-		pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack1, iPlot, 100)
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
+		if (pCityBuildings:HasBuilding(iDummyStack1) ~= true) then
+			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack1, iPlot, 100)
+			end
 		return --abort if 1 stacks
 	end
 	if(iStacksRequired==2) then
 		print("Two Stacks");
-		pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack2, iPlot, 100)
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
+		if (pCityBuildings:HasBuilding(iDummyStack2) ~= true) then
+			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack2, iPlot, 100)
+			end
 		return --abort if 2 stacks
 	end
 	if(iStacksRequired==3) then
 		print("Three Stacks");
-		pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack3, iPlot, 100)
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
+		if (pCityBuildings:HasBuilding(iDummyStack3) ~= true) then
+			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack3, iPlot, 100)
+			end
 		return --abort if 3 stacks
 	end
 	if(iStacksRequired==4) then
 		print("Four Stacks");
-		pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack4, iPlot, 100)
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
+		if (pCityBuildings:HasBuilding(iDummyStack4) ~= true) then
+			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack4, iPlot, 100)
+			end
 		return --abort if 4 stacks
 	end
 	if(iStacksRequired==5) then
 		print("Five Stacks");
-		pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack5, iPlot, 100)
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
+		if (pCityBuildings:HasBuilding(iDummyStack5) ~= true) then
+			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack5, iPlot, 100)
+			end
 		return --abort if 5 stacks
 	end
 	if(iStacksRequired>=6) then
 		print("Six Stacks");
-		pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack6, iPlot, 100)
+		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
+		if (pCityBuildings:HasBuilding(iDummyStack6) ~= true) then
+			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack6, iPlot, 100)
+			end
 		return --abort if 6 stacks
 	end
 end

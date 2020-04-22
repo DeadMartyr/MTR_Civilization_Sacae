@@ -15,6 +15,17 @@
 	</IconTextureAtlases>
 
 	<IconDefinitions>
-		<Row Name="ICON_LEADER_MTR_LYNDIS"			Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		<Row Name="ICON_LEADER_MTR_LYNDIS"						Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		
+		<!--LyndisUA DummyBuilding Icons-->
+		<!--This will solely show up in the City's Buildings List, I believe the size there is 32x32, the Leader Atlas has that size 
+			and can be used as a placeholder for it, does indeed work in game unless another size is used elsewhere, however there 
+			should be no other places it shows as you cannot build it and it does not show in the CivPedia-->
+		<Row Name="ICON_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1"	Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		<Row Name="ICON_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2"	Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		<Row Name="ICON_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3"	Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		<Row Name="ICON_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4"	Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		<Row Name="ICON_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5"	Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
+		<Row Name="ICON_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6"	Atlas="ICON_ATLAS_MTR_LYNDIS"	Index="0"/>
 	</IconDefinitions>
 </GameData>

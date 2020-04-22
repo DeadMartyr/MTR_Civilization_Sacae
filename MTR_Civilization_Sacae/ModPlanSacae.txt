@@ -12,8 +12,9 @@ Civilization (Sacae)
 			[*]	> +1 Culture for every 2 adjacent plains hills
 			[*] > +3 Culture with CIVIC_MEDIEVAL_FAIRES
 		Effect:
-			[ ] > Pastures around it get +1 Food
-			[ ] > +10% border growth for each one worked in a city
+			[-] > Pastures around it get +1 Food [MODIFIED]
+				+ 1 food to camp for each adjacent pasture, +1 culture for every 2 adjacent plains or plains hills
+			[-] > +10% border growth for each one worked in a city [CUT]
 		Restrictions:
 			[*] > Cannot be touching another Nomad Camp
 			[*] > Only can be built on Plains (Flat)
