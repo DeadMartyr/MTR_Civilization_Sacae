@@ -2,14 +2,14 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>Sacae Civilization - [COLOR_FLOAT_GOLD]Fire Emblem[ENDCOLOR] [ICON_GOVERNMENT]</Name>
+    <Name>[COLOR_FLOAT_GOLD]Fire Emblem[ENDCOLOR] - [ICON_GOVERNMENT] Sacae</Name>
     <Guid>3d304339-2777-4b7f-b4c5-c1075ffb9a0b</Guid>
     <ProjectGuid>d654c693-e1a6-4a9a-89d0-7e93ea57d76c</ProjectGuid>
-    <ModVersion>1</ModVersion>
+    <ModVersion>2</ModVersion>
     <Teaser>Adds the Sacaen Nomads from Fire Emblem</Teaser>
-    <Description>Temporary description,</Description>
+    <Description>This mod will be split into two mods: [NEWLINE][NEWLINE]One for the civilization and another for the Leader. This is so that mod compatibility and multiple leaders under one civ is possible, I may make Rath as an alternate leader once I come up with a good UA for him. [NEWLINE][NEWLINE]If you are seeing this, I most likely went through with releasing an alpha version. This version will eventually be replaced with a set of two mods as previously mentioned.</Description>
     <Authors>Martyr</Authors>
-    <SpecialThanks>Deliverator, Keni, LeeS, JNR</SpecialThanks>
+    <SpecialThanks>Rarolina, Deliverator, LeeS, Chrisy15</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
