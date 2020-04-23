@@ -20,7 +20,7 @@
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_MTR_LYNDIS</LeaderAbilityIcon>
-			<Portrait>LEADER_MTR_LYNDIS_NEUTRAL</Portrait>
+			<Portrait>FALLBACK_NEUTRAL_MTR_LYNDIS_UI</Portrait>
 			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
 		</Row>
 
@@ -40,7 +40,7 @@
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_MTR_LYNDIS</LeaderAbilityIcon>
-			<Portrait>LEADER_MTR_LYNDIS_NEUTRAL</Portrait>
+			<Portrait>FALLBACK_NEUTRAL_MTR_LYNDIS_UI</Portrait>
 			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
 		</Row>
 
@@ -60,7 +60,7 @@
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_MTR_LYNDIS</LeaderAbilityIcon>
-			<Portrait>LEADER_MTR_LYNDIS_NEUTRAL</Portrait>
+			<Portrait>FALLBACK_NEUTRAL_MTR_LYNDIS_UI</Portrait>
 			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
 		</Row>
 	</Players>

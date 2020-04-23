@@ -7,7 +7,7 @@
 		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"					Text="Lyndis"/>
 		
 		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME"			Text="Lady Of The Wind"/>
-		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"	Text="Grants flat production boost to a city's production progress for every tile claimed through purchases or by expansion. (Grassland = 10, Plains = 20, hills halve these amounts)  Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0) "/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"	Text="Grants flat production boost to a city's [ICON_PRODUCTION] progress for every tile claimed through purchases or by expansion. (Grassland = 5, Plains = 10, hills halve these amounts) [NEWLINE][NEWLINE]Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind. [NEWLINE]Every 4 'points' grants a 'stack', points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0) "/>
 
 
 		<Row Language="en_US"	Tag="LOC_LOADING_INFO_LEADER_MTR_LYNDIS"			Text="Loading Info Placeholder"/>
@@ -18,22 +18,22 @@
 		<!-- ============================================================ -->
 		<!--1 Stack-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_NAME"			Text="Lady Of The Wind (1 Stack)"/>
-		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
 		<!--2 Stack-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_NAME"			Text="Lady Of The Wind (2 Stack)"/>
-		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
 		<!--3 Stack-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_NAME"			Text="Lady Of The Wind (3 Stack)"/>
-		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
 		<!--4 Stack-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_NAME"			Text="Lady Of The Wind (4 Stack)"/>
-		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
 		<!--5 Stack-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_NAME"			Text="Lady Of The Wind (5 Stack)"/>
-		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
 		<!--6 Stack-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_NAME"			Text="Lady Of The Wind (6 Stack)"/>
-		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
 
 	</LocalizedText>
 </GameData>

@@ -94,10 +94,10 @@ end
 	--Element 1 Data Table, holds amounts to boost for each type of Terrain
 	local tValidTerrainExpansionList = 
 		{
-		[GameInfo.Terrains["TERRAIN_GRASS"].Index] = 10,
-		[GameInfo.Terrains["TERRAIN_GRASS_HILLS"].Index] = 5,
-		[GameInfo.Terrains["TERRAIN_PLAINS"].Index] = 20,
-		[GameInfo.Terrains["TERRAIN_PLAINS_HILLS"].Index] = 10 
+		[GameInfo.Terrains["TERRAIN_GRASS"].Index] = 5,
+		[GameInfo.Terrains["TERRAIN_GRASS_HILLS"].Index] = 2.5,
+		[GameInfo.Terrains["TERRAIN_PLAINS"].Index] = 10,
+		[GameInfo.Terrains["TERRAIN_PLAINS_HILLS"].Index] = 5 
 		}
 	
 	
