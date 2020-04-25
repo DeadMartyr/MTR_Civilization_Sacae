@@ -173,6 +173,15 @@ function MTR_GetUnitPositions(iPlayerID)
 	return tUnitPoses[iPlayerID]--Returns the table for that playerID
 end
 
+--For use when a unit is barely trained
+function MTR_SetSpecificUnitPosition(iPlayerID, iUnitID)
+	if tValidPlayerList[iPlayerID] then
+		local pPlayer = Players[iPlayerID];
+		local pUnit = pPlayer:GetUnits():FindID(iUnitID);
+		
+		tUnitStartPoses[iPlayerID][iUnitID] = {X = pUnit:GetX(), Y = pUnit:GetY()};
+	end
+end
 
 
 
@@ -213,7 +222,46 @@ function MTR_SacaeUA_UnitMoved(iPlayerID, iUnitID, iX, iY, locallyVisible, state
 end
 
 --====================================================================
+--Runs at LoadScreenClose (when you reload game)
+--This just is a workaround for the fact that the lua table for the unit start poses doesn't get saved/reloaded
+--Just calls MTR_SacaeUA_PlayerTurnActivated
+--====================================================================
+function MTR_SacaeUA_OnLoadScreenClose()
+	for k, playerID in ipairs(PlayerManager.GetWasEverAliveIDs()) do
+		MTR_SacaeUA_PlayerTurnActivated(playerID, true); -- just setting bIsFirstTimeThisTurn to true
+	end
+end
+
+--====================================================================
+--Runs at UnitAddedToMap
+--This just is a workaround for the fact that the lua table for the unit start poses doesn't have an entry for a unit that was barely trained that turn
+--Note: has to check if unit spawned dead (happens apparently), aborts if it is
+--====================================================================
+function MTR_SacaeUA_UnitAddedToMap(iPlayerID, iUnitID)
+	if (tValidPlayerList[iPlayerID]~=true) then return end --abort if not ValidPlayer
+	
+	local pPlayer = Players[iPlayerID]
+    local pPlayerUnits = pPlayer:GetUnits()
+    local pUnit = pPlayerUnits:FindID(iUnitID)
+    if (pUnit == nil) then
+        --print("the unit's pUnit object was a nil value")
+        return
+    end
+    local iUnitX, iUnitY = pUnit:GetX(), pUnit:GetY()
+    local pPlot = Map.GetPlot(iUnitX, iUnitY)
+    if (pPlot == nil) then
+        --print("the unit's plot location was nil")
+        return
+    end
+	
+	MTR_SetSpecificUnitPosition(iPlayerID, iUnitID);
+end
+
+--====================================================================
 --Inputting Functions into the Game Events (This is what I think this does)
 --====================================================================
 Events.PlayerTurnActivated.Add(MTR_SacaeUA_PlayerTurnActivated);
 Events.UnitMoved.Add(MTR_SacaeUA_UnitMoved);
+
+Events.LoadScreenClose.Add(MTR_SacaeUA_OnLoadScreenClose)
+Events.UnitAddedToMap.Add(MTR_SacaeUA_UnitAddedToMap)
