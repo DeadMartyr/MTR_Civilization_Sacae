@@ -4,13 +4,14 @@
 <!-- DateCreated: 2020-03-13 13:38:33 -->
 <GameData>
 	<LocalizedText>
-		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"					Text="Lyndis"/>
+		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"						Text="Lyndis"/>
 		
-		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME"			Text="Lady Of The Wind"/>
-		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"	Text="Grants flat production boost to a city's [ICON_PRODUCTION] progress for every tile claimed through purchases or by expansion. (Grassland = 5, Plains = 10, hills halve these amounts) [NEWLINE][NEWLINE]Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind. [NEWLINE]Every 4 'points' grants a 'stack', points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0) "/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME"				Text="Lady Of The Wind"/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"		Text="Grants flat production boost to a city's [ICON_PRODUCTION] progress for every tile claimed through purchases or by expansion. (Grassland = 5, Plains = 10, hills halve these amounts) [NEWLINE][NEWLINE]Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind. [NEWLINE]Every 4 'points' grants a 'stack', points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0) "/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION_LITE"	Text="Grants flat production boost to a city's [ICON_PRODUCTION] progress for every tile claimed through purchases or by expansion. [NEWLINE][NEWLINE]Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind."/>
 
 
-		<Row Language="en_US"	Tag="LOC_LOADING_INFO_LEADER_MTR_LYNDIS"			Text="Loading Info Placeholder"/>
+		<Row Language="en_US"	Tag="LOC_LOADING_INFO_LEADER_MTR_LYNDIS"				Text="Loading Info Placeholder"/>
 
 
 		<!-- ============================================================ -->

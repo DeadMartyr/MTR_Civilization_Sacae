@@ -33,7 +33,8 @@ Civilization (Sacae)
 		Resource Cost:		15
 		Maintenance:		2
 
-		Bonus to damage dealt to units standing on flat terrain
+		Bonus to damage dealt to units standing on flat terrain[CUT]
+		Move after attack
 
 	UA: Call of the Wind
 		Cavalry units (Light Heavy and Ranged) Heal from moving  

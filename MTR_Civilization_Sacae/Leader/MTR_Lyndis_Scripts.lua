@@ -19,7 +19,7 @@
 --Credit: Chrisy15 and LeeS
 --====================================================================
 function MTR_getValidPlayersWithTrait(sTrait)
-	print("MTR_getValidPlayersWithTrait");
+	--print("MTR_getValidPlayersWithTrait");
 	local tValidPlayers = {}
 	
 	for k, v in ipairs(PlayerManager.GetWasEverAliveIDs()) do

@@ -21,7 +21,7 @@
 --Created by Chrisy15, didn't retool as it functions exactly the way I need it
 --------
 function MTR_getValidPlayersWithTrait(sTrait)
-	print("MTR_getValidPlayersWithTrait");
+	--print("MTR_getValidPlayersWithTrait");
 	local tValidPlayers = {}
 	
 	for k, v in ipairs(PlayerManager.GetWasEverAliveIDs()) do
