@@ -289,9 +289,7 @@
 		</Element>
 		<Element>
 			<consumerName text="LeaderFallback"/>
-			<relativeArtDefPaths>
-				<Element text="LeaderFallbacks.artdef"/>
-			</relativeArtDefPaths>
+			<relativeArtDefPaths/>
 			<libraryDependencies>
 				<Element text="LeaderFallback"/>
 			</libraryDependencies>
@@ -408,9 +406,7 @@
 		</Element>
 		<Element>
 			<libraryName text="LeaderFallback"/>
-			<relativePackagePaths>
-				<Element text="LeaderFallbacks"/>
-			</relativePackagePaths>
+			<relativePackagePaths/>
 		</Element>
 		<Element>
 			<libraryName text="LeaderLighting"/>
@@ -483,9 +479,7 @@
 		<Element>
 			<libraryName text="UITexture"/>
 			<relativePackagePaths>
-				<Element text="UILeaders"/>
-				<Element text="MTR_Lyndis_Icons"/>
-				<Element text="MTR_Icons"/>
+				<Element text="MTR_Sacae_Icons"/>
 				<Element text="MTR_Sacae_UU_Icons"/>
 			</relativePackagePaths>
 		</Element>
