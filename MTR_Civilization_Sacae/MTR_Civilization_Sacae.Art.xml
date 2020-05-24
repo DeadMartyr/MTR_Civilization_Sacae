@@ -481,6 +481,7 @@
 			<relativePackagePaths>
 				<Element text="MTR_Sacae_Icons"/>
 				<Element text="MTR_Sacae_UU_Icons"/>
+				<Element text="MTR_Sacae_UI_Icons"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

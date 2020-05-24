@@ -28,10 +28,19 @@
 		<Row Name="ICON_ATLAS_MTR_SACAE_UU"	IconSize="50"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_NomadUU_M_50.dds"/>
 		<Row Name="ICON_ATLAS_MTR_SACAE_UU"	IconSize="80"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_NomadUU_M_80.dds"/>
 		<Row Name="ICON_ATLAS_MTR_SACAE_UU"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_NomadUU_M_256.dds"/>
+
+		<!--SACAE UI ICONS-->
+		<Row Name="ICON_ATLAS_MTR_SACAE_UI"	IconSize="32"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Sacae_UI_32.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE_UI"	IconSize="38"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Sacae_UI_38.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE_UI"	IconSize="50"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Sacae_UI_50.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE_UI"	IconSize="80"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Sacae_UI_80.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE_UI"	IconSize="128"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Sacae_UI_128.dds"/>
+		<Row Name="ICON_ATLAS_MTR_SACAE_UI"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1"	Filename="MTR_Sacae_UI_256.dds"/>
 		
 	</IconTextureAtlases>
 	<IconDefinitions>
 		<Row Name="ICON_CIVILIZATION_MTR_SACAE"		Atlas="ICON_ATLAS_MTR_SACAE"	Index="0"/>
 		<Row Name="ICON_UNIT_MTR_NOMAD"				Atlas="ICON_ATLAS_MTR_SACAE_UU"	Index="0"/>
+		<Row Name="ICON_IMPROVEMENT_MTR_SACAE_UI"	Atlas="ICON_ATLAS_MTR_SACAE_UI"	Index="0"/>
 	</IconDefinitions>
 </GameData>

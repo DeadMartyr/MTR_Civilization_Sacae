@@ -1,3 +1,13 @@
 Starting AssetCooker...
-This build of the cooker is not able to cook for: 'MacOS'
-Cook completed in 0.028 seconds
+Argument '--shaders' has been deprecated and is no longer used.
+XLP cook starting...
+C:\Users\Angelo\Documents\Firaxis ModBuddy\Civilization VI\MTR_Civilization_Sacae\MTR_Civilization_Sacae\XLPs\MTR_Sacae_UU_Icons.xlp
+Opened output file: C:\Users\Angelo\Documents\My Games\Sid Meier's Civilization VI\Mods\MTR_Civilization_Sacae\Platforms\MacOS\BLPs/MTR_Sacae_UU_Icons.blp    For XLP: 'C:\Users\Angelo\Documents\Firaxis ModBuddy\Civilization VI\MTR_Civilization_Sacae\MTR_Civilization_Sacae\XLPs\MTR_Sacae_UU_Icons.xlp'
+Could not load digest key: ''.  Using mod key to sign BLP.
+Starting 'MTR_Sacae_UU_Icons'
+Load finished for: 'MTR_Sacae_UU_Icons' in 0.002 seconds
+Cook finished for: 'MTR_Sacae_UU_Icons' in 0.007 seconds
+Disk write finished for: 'MTR_Sacae_UU_Icons' in 0.064 seconds
+Cleanup finished for: 'MTR_Sacae_UU_Icons' in 0.000 seconds
+XLP cook completed with success.
+Cook completed in 0.173 seconds
