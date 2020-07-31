@@ -62,24 +62,15 @@ end
 ----------------------------------------------
 --My custom method that generates a table of Unit Types with tags for the Classes it's meant to affect
 ----------------------------------------------
-function MTR_getValidUnits()
-	local tTable = {}
-	local tQuery = DB.Query("SELECT Type, Tag FROM TypeTags WHERE (Type NOT NULL OR Tag NOT NULL) AND Tag = 'CLASS_LIGHT_CAVALRY'");
-	for k, v in ipairs(tQuery) do
-		tTable[v.Type] = true;
+function MTR_getValidUnits(tTableInput)
+	tTableOutput = {}
+	for z, c in pairs(tTableInput) do
+		local tQuery = DB.Query("SELECT * FROM TypeTags WHERE Type IN (SELECT UnitType FROM Units) AND (Tag = '" .. c .. "')");
+		for k, v in ipairs(tQuery) do
+			tTableOutput[v.Type] = true;
+		end
 	end
-	
-	tQuery = DB.Query("SELECT Type, Tag FROM TypeTags WHERE (Type NOT NULL OR Tag NOT NULL) AND Tag = 'CLASS_HEAVY_CAVALRY'");
-
-	for k, v in ipairs(tQuery) do
-		tTable[v.Type] = true;
-	end
-	
-	tQuery = DB.Query("SELECT Type, Tag FROM TypeTags WHERE (Type NOT NULL OR Tag NOT NULL) AND Tag = 'CLASS_RANGED_CAVALRY'");
-	for k, v in ipairs(tQuery) do
-		tTable[v.Type] = true;
-	end
-	return tTable;
+	return tTableOutput;
 end
 ----------------------------------------------
 --====================================================================
@@ -91,7 +82,13 @@ end
 
 	local sTrait = "TRAIT_CIVILIZATION_MTR_SACAE_UA";
 	local tValidPlayerList = MTR_getValidPlayersWithTrait(sTrait); --Key is PlayerID, returns true or nil based on what MTR_getValidPlayersWithTrait returns
-	local tValidUnitList = MTR_getValidUnits(); --Table containing all UnitTypes that are Cavalry (Technically gets filled with some Abilities from the Query but they will never be called, low priority to fix on the backend)
+	local tValidUnitClassList = 
+	{
+	"CLASS_LIGHT_CAVALRY",
+	"CLASS_RANGED_CAVALRY",
+	"CLASS_MTR_SACAE"
+	}
+	local tValidUnitList = MTR_getValidUnits(tValidUnitClassList); --Table containing all UnitTypes that are a class list in tValidUnitClassList
 	
 	local tUnitStartPoses = {}; -- [player][unit] -> {X, Y}
 	local iUnitMaxDistancesCovered = {}; --array of array of integers [player][unit] -> int 
