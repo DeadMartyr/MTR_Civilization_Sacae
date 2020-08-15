@@ -175,6 +175,18 @@ function MTR_SetSpecificUnitPosition(iPlayerID, iUnitID)
 	if tValidPlayerList[iPlayerID] then
 		local pPlayer = Players[iPlayerID];
 		local pUnit = pPlayer:GetUnits():FindID(iUnitID);
+		if (pUnit == nil) then 
+			--print("pUnit is nil)
+			return
+		end
+		if (tUnitStartPoses[iPlayerID] == nil) then
+			--print("No table present for that playerID");
+			tUnitStartPoses[iPlayerID] = {};
+		end
+		if (tUnitStartPoses[iPlayerID][iUnitID] == nil) then
+			--print("No table present for that unitID");
+			tUnitStartPoses[iPlayerID][iUnitID] = {};
+		end
 		
 		tUnitStartPoses[iPlayerID][iUnitID] = {X = pUnit:GetX(), Y = pUnit:GetY()};
 	end
