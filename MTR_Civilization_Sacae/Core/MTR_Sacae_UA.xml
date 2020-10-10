@@ -7,7 +7,11 @@
 	This File is essentially just defining "TRAIT_CIVILIZATION_MTR_SACAE_UA" and inserting it where it needs to be so that the lua script I made acts on it
 	To get a better idea of how it works, then refer to "MTR_Sacae_Scripts.lua"
 	-->
-	
+
+	<Tags>
+		<!--Any Unit with this Class associated with it will have the Healing Script affect them-->
+		<Row Tag="CLASS_MTR_SACAE_UAINCLUDE"			Vocabulary="ABILITY_CLASS"/>
+	</Tags>
 	
 	<!--Defines the Type of Traits and Modifiers-->
 	<Types>

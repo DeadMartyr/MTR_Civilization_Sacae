@@ -86,7 +86,7 @@ end
 	{
 	"CLASS_LIGHT_CAVALRY",
 	"CLASS_RANGED_CAVALRY",
-	"CLASS_MTR_SACAE"
+	"CLASS_MTR_SACAE_UAINCLUDE"
 	}
 	local tValidUnitList = MTR_getValidUnits(tValidUnitClassList); --Table containing all UnitTypes that are a class list in tValidUnitClassList
 	
@@ -126,7 +126,7 @@ function MTR_ApplyHeal(iPlayerID, iUnitID, iNewDistance, iOldDistance) --Assumes
 		end
 		
 		local pUnit = Players[iPlayerID]:GetUnits():FindID(iUnitID);
-		pUnit:ChangeDamage(-1*(iNewHeal-iOldHeal)); --negative damage is healing, positive is damage, set to positive right now for testing purposes
+		pUnit:ChangeDamage(-1*(iNewHeal-iOldHeal)); --negative damage is healing, positive is damage
 		iUnitMaxDistancesCovered[iPlayerID][iUnitID] = iNewDistance;--records maxdistance
 end
 
